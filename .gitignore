@@ -1,0 +1,7 @@
+flightsWeather39/
+config/
+db/__pycache__/
+data/
+db/__pycache__/
+ingestion/__pycache__
+transformation/__pycache__/
