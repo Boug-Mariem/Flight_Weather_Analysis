@@ -201,7 +201,11 @@ def new_features(df_g):
     df['is_low_pressure_dep'] = df['pres_dep'] < 1000
     df['is_low_pressure_arr'] = df['pres_arr'] < 1000
     #wind_prcp_snow
-    df[['weather_combination_dep', 'weather_combination_arr']] = df.apply(categorize_weather_levels,axis=1,result_type='expand')
+
+    result = df.apply(categorize_weather_levels, axis=1, result_type='expand')
+    print("DEBUG result shape:", result.shape)
+    print(result.head())
+    df[['weather_combination_dep', 'weather_combination_arr']] = result#df.apply(categorize_weather_levels,axis=1,result_type='expand')
 
     df['bad_weather_dep'] = ( (df['prcp_strong_dep']) | (df['snow_strong_dep']) | (df['wind_strong_dep']) |(df['is_extreme_heat_dep']) | (df['is_freezing_dep']) |(df['is_low_pressure_dep']) )
     df['bad_weather_arr'] = ( (df['prcp_strong_arr']) | (df['snow_strong_arr']) | (df['wind_strong_arr']) |(df['is_extreme_heat_arr']) | (df['is_freezing_arr']) |(df['is_low_pressure_arr']) )

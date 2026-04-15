@@ -21,6 +21,7 @@ def clean_for_json(record):
 
 producer = KafkaProducer(
     bootstrap_servers='localhost:9092',
+    #bootstrap_servers='host.docker.internal:9092', # pour que docker puisse voir kafka
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
