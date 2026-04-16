@@ -5,3 +5,6 @@ data/
 db/__pycache__/
 ingestion/__pycache__
 transformation/__pycache__/
+.venv/
+kafka_2.13-3.7.2/
+streamlit/__pycache__/
