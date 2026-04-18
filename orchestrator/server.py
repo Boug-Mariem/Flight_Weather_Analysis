@@ -1,5 +1,8 @@
 from flask import Flask
 import subprocess
+from datetime import datetime
+from db.postgresConnection import get_engine
+import sqlalchemy as sa
 
 app = Flask(__name__)
 
@@ -104,6 +107,28 @@ def run_Predction():
         cwd=r"D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis"
     )
     return "Prediction done", 200
+
+@app.route("/notify_refresh")
+def notify():
+    engine = get_engine()
+    create_table_sql = """
+    CREATE TABLE IF NOT EXISTS pipeline_status (
+        id INTEGER PRIMARY KEY,
+        last_update TIMESTAMP
+    );
+    """
+    upsert_sql = """
+    INSERT INTO pipeline_status (id, last_update)
+    VALUES (1, NOW())
+    ON CONFLICT (id)
+    DO UPDATE SET last_update = NOW();
+    """
+    with engine.begin() as conn:
+        # 1. créer table si elle n'existe pas
+        conn.execute(sa.text(create_table_sql))
+        # 2. insérer ou update
+        conn.execute(sa.text(upsert_sql))
+    return "refresh signal sent", 200
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

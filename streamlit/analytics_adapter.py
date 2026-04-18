@@ -57,7 +57,12 @@ from transformation.airline_airport_bad_weather import (
 
 from transformation.delay_predection import predict_delay
 from db.postgresConnection import get_engine
+import pandas as pd
 
+def get_pipeline_last_update():
+    engine = get_engine()
+    df = pd.read_sql("SELECT last_update FROM pipeline_status WHERE id=1", engine)
+    return df.iloc[0, 0]
 
 def _rows_to_df(rows: Any, columns: List[str]) -> pd.DataFrame:
     if rows is None:
