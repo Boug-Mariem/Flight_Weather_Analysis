@@ -906,13 +906,35 @@ with prediction_tab:
 
 
 import time
+from datetime import datetime
+from streamlit_autorefresh import st_autorefresh
+st_autorefresh(interval=10 * 1000, key="refresh")
 
 if "last_update" not in st.session_state:
     st.session_state.last_update = get_pipeline_last_update()
 
 current_update = get_pipeline_last_update()
 
+# if current_update != st.session_state.last_update:
+#     st.session_state.last_update = current_update
+#     st.session_state.analytics = collect_all_analytics()
+
+#     st.experimental_rerun()
 if current_update != st.session_state.last_update:
     st.session_state.last_update = current_update
     st.session_state.analytics = collect_all_analytics()
+    
+    # stocker info de refresh
+    st.session_state.last_refresh_time = datetime.now()
+    st.session_state.show_toast = True
+
     st.experimental_rerun()
+
+# affichage après rerun
+if st.session_state.get("show_toast"):
+    st.success("🔄 Données mises à jour")
+    print("REFRESH TRIGGERED")
+    st.session_state.show_toast = False
+
+if "last_refresh_time" in st.session_state:
+    st.success(f"Dernier refresh : {st.session_state.last_refresh_time}")    
