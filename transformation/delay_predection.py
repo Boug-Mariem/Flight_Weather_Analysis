@@ -33,7 +33,7 @@ def predict_delay(airport, airline=None):
     # récupérer météo
     df_weather = load_weather_silver_predection(engine, airport)
     if df_weather.empty:
-        print("⚠️ No weather data available")
+        print("WARNING: No weather data available")
         return None
     
     # construire weather_combination
@@ -47,7 +47,7 @@ def predict_delay(airport, airline=None):
 
         # fallback si vide
         if df_hist.empty:
-            print("No data for this airline !! → fallback airport only")
+            print("No data for this airline. Fallback to airport only.")
             df_hist = load_gold_table_predction_airport(
                 engine, airport, weather_combination
             )
