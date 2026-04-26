@@ -18,7 +18,9 @@ Additionally, the system provides:
 - predictive estimation of flight delays
 
 ## Architecture
-                              +----------------------+
+
+```text
+                +----------------------+
                 |   Kaggle Datasets    |
                 | (Flights + Weather)  |
                 +----------+-----------+
@@ -58,6 +60,7 @@ Additionally, the system provides:
                  | Streamlit Dashboard|
                  | Data Visualization |
                  +-------------------+
+```
 ## Data Sources
 _Flight Data_ :
 US Civil Flights 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=US_flights_2023.csv)  
