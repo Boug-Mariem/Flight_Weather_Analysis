@@ -1,0 +1,2258 @@
+2026-04-19 22:27:40,933 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 22:27:44,890 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (111, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      LAS      high-wind_high-rain_high-snow        1.0              1   1
+1      RKS       high-wind_high-rain_low-snow        1.0              1   1
+2      CPR       high-wind_low-rain_high-snow        1.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      GRB    high-wind_medium-rain_high-snow       16.0              3   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      ABE        low-wind_high-rain_low-snow        1.0              1   1
+8      BUF        low-wind_low-rain_high-snow        3.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BOI    medium-wind_high-rain_high-snow       20.0              3   1
+13     PIA     medium-wind_high-rain_low-snow        2.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1040)
+('ORD', 973)
+('DEN', 938)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...     avg_delay_weather total_delay_weather
+0     PIH                    1  ...  860.0000000000000000                 860
+1     GRI                    2  ...  298.5000000000000000                 597
+2     BGR                    4  ...  292.5000000000000000                1170
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     HYS                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (111, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+551     VEL     2  187.000000              2
+552     VPS     2   43.500000              2
+553     XNA     2   40.888889             18
+554     XWA     2  157.333333              3
+555     YUM     2    9.000000              1
+
+[556 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (111, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   31.666667             12
+1       ABI  winter   48.900000             10
+2       ABQ  winter  119.793103             29
+3       ABR  winter  172.500000              6
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+309     VPS  winter  280.142857             21
+310     WRG  winter   21.000000              2
+311     XNA  winter  127.075758             66
+312     XWA  winter  211.555556              9
+313     YUM  winter   39.600000              5
+
+[314 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (111, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          13.750000  ...              40.625000                    8
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             147.318182                   22
+3       ABR                NaN  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+309     VPS         388.000000  ...             262.166667                   18
+310     WRG           2.000000  ...              40.000000                    1
+311     XNA          17.555556  ...             144.368421                   57
+312     XWA                NaN  ...             211.555556                    9
+313     YUM          43.500000  ...              37.000000                    3
+
+[314 rows x 5 columns]
+2026-04-19 22:27:44,891 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.96s
+2026-04-19 22:32:14,599 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 22:32:17,709 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (125, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      LAS      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      CPR       high-wind_low-rain_high-snow        1.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      GRB    high-wind_medium-rain_high-snow       16.0              3   1
+5      HOU     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      ABE        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BOI    medium-wind_high-rain_high-snow       20.0              3   1
+13     PIA     medium-wind_high-rain_low-snow        2.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1051)
+('ORD', 1022)
+('DEN', 944)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...     avg_delay_weather total_delay_weather
+0     PIH                    1  ...  860.0000000000000000                 860
+1     GRI                    2  ...  298.5000000000000000                 597
+2     RIW                    3  ...  286.6666666666666667                 860
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     HYS                    1  ...      5.0000000000000000                   5
+2     AVP                    1  ...      5.0000000000000000                   5
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (105, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+559     VPS     2   43.500000              2
+560     XNA     2   39.789474             19
+561     XWA     2  157.333333              3
+562     YAK     2   39.666667              3
+563     YUM     2    9.000000              1
+
+[564 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (105, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   28.928571             14
+1       ABI  winter   48.900000             10
+2       ABQ  winter  119.793103             29
+3       ABR  winter  172.500000              6
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+311     WRG  winter   21.000000              2
+312     XNA  winter  125.477612             67
+313     XWA  winter  211.555556              9
+314     YAK  winter   39.666667              3
+315     YUM  winter   39.600000              5
+
+[316 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (134, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              38.111111                    9
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             147.318182                   22
+3       ABR                NaN  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+311     WRG           2.000000  ...              40.000000                    1
+312     XNA          17.555556  ...             142.224138                   58
+313     XWA                NaN  ...             211.555556                    9
+314     YAK          18.000000  ...              50.500000                    2
+315     YUM          43.500000  ...              37.000000                    3
+
+[316 rows x 5 columns]
+2026-04-19 22:32:17,709 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.11s
+2026-04-19 22:35:45,210 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 22:35:49,181 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (69, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      CPR       high-wind_low-rain_high-snow        1.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      GRB    high-wind_medium-rain_high-snow       16.0              3   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     GTF    medium-wind_high-rain_high-snow       11.0              1   1
+13     PIA     medium-wind_high-rain_low-snow        2.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1051)
+('ORD', 1023)
+('DEN', 947)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     GRI                    2  ...   298.5000000000000000                 597
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (58, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+565     VPS     2   43.500000              2
+566     XNA     2   39.789474             19
+567     XWA     2  157.333333              3
+568     YAK     2   39.666667              3
+569     YUM     2    9.000000              1
+
+[570 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (58, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   28.928571             14
+1       ABI  winter   48.900000             10
+2       ABQ  winter  119.793103             29
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+312     WRG  winter   21.000000              2
+313     XNA  winter  125.477612             67
+314     XWA  winter  211.555556              9
+315     YAK  winter   39.666667              3
+316     YUM  winter   39.600000              5
+
+[317 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (70, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              38.111111                    9
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             147.318182                   22
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+312     WRG           2.000000  ...              40.000000                    1
+313     XNA          17.555556  ...             142.224138                   58
+314     XWA                NaN  ...             211.555556                    9
+315     YAK          18.000000  ...              50.500000                    2
+316     YUM          43.500000  ...              37.000000                    3
+
+[317 rows x 5 columns]
+2026-04-19 22:35:49,181 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.97s
+2026-04-19 22:38:44,139 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 22:38:47,210 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (15, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      RKS       high-wind_high-rain_low-snow        1.0              1   1
+2      CPR       high-wind_low-rain_high-snow        1.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      GRB    high-wind_medium-rain_high-snow       16.0              3   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      ABE        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      CMH         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     GTF    medium-wind_high-rain_high-snow       11.0              1   1
+13     PIA     medium-wind_high-rain_low-snow        2.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1051)
+('ORD', 1023)
+('DEN', 952)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     GRI                    2  ...   298.5000000000000000                 597
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (15, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+565     VPS     2   43.500000              2
+566     XNA     2   39.789474             19
+567     XWA     2  157.333333              3
+568     YAK     2   39.666667              3
+569     YUM     2    9.000000              1
+
+[570 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (15, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   28.928571             14
+1       ABI  winter   48.900000             10
+2       ABQ  winter  119.793103             29
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+312     WRG  winter   21.000000              2
+313     XNA  winter  125.477612             67
+314     XWA  winter  211.555556              9
+315     YAK  winter   39.666667              3
+316     YUM  winter   39.600000              5
+
+[317 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (15, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              38.111111                    9
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             147.318182                   22
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+312     WRG           2.000000  ...              40.000000                    1
+313     XNA          17.555556  ...             142.224138                   58
+314     XWA                NaN  ...             211.555556                    9
+315     YAK          18.000000  ...              50.500000                    2
+316     YUM          43.500000  ...              37.000000                    3
+
+[317 rows x 5 columns]
+2026-04-19 22:38:47,210 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.07s
+2026-04-19 22:40:43,357 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 22:40:46,645 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (155, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      CPR       high-wind_low-rain_high-snow        1.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      GRB    high-wind_medium-rain_high-snow       16.0              3   1
+5      HOU     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      CMH         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     GTF    medium-wind_high-rain_high-snow       11.0              1   1
+13     FWA     medium-wind_high-rain_low-snow        4.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1082)
+('DFW', 1080)
+('DEN', 1039)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     GRI                    2  ...   298.5000000000000000                 597
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (155, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+572     VPS     2   43.500000              2
+573     XNA     2   38.750000             20
+574     XWA     2  157.333333              3
+575     YAK     2   39.666667              3
+576     YUM     2   20.333333              3
+
+[577 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (155, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  119.750000             40
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+312     WRG  winter   21.000000              2
+313     XNA  winter  123.911765             68
+314     XWA  winter  211.555556              9
+315     YAK  winter   39.666667              3
+316     YUM  winter   35.714286              7
+
+[317 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (155, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             138.090909                   33
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+312     WRG           2.000000  ...              40.000000                    1
+313     XNA          17.555556  ...             140.135593                   59
+314     XWA                NaN  ...             211.555556                    9
+315     YAK          18.000000  ...              50.500000                    2
+316     YUM          43.500000  ...              32.600000                    5
+
+[317 rows x 5 columns]
+2026-04-19 22:40:46,645 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.29s
+2026-04-19 23:00:44,339 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:00:49,778 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (207, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      RKS       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1132)
+('DEN', 1090)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (152, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+580     WRG     2   47.000000              1
+581     XNA     2   40.227273             22
+582     XWA     2  139.800000              5
+583     YAK     2   36.750000              4
+584     YUM     2   20.333333              3
+
+[585 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (152, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  117.463415             41
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+315     WRG  winter   29.666667              3
+316     XNA  winter  121.942857             70
+317     XWA  winter  193.727273             11
+318     YAK  winter   36.750000              4
+319     YUM  winter   35.714286              7
+
+[320 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (152, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             134.794118                   34
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+315     WRG           2.000000  ...              43.500000                    2
+316     XNA          17.555556  ...             137.344262                   61
+317     XWA                NaN  ...             193.727273                   11
+318     YAK          18.000000  ...              43.000000                    3
+319     YUM          43.500000  ...              32.600000                    5
+
+[320 rows x 5 columns]
+2026-04-19 23:00:49,778 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=5.44s
+2026-04-19 23:01:30,013 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:01:34,015 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (85, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      HOU     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      CMH         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1139)
+('DEN', 1096)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (85, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+582     WRG     2   47.000000              1
+583     XNA     2   40.227273             22
+584     XWA     2  139.800000              5
+585     YAK     2   36.750000              4
+586     YUM     2   20.333333              3
+
+[587 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (85, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  117.463415             41
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+316     WRG  winter   29.666667              3
+317     XNA  winter  121.942857             70
+318     XWA  winter  193.727273             11
+319     YAK  winter   36.750000              4
+320     YUM  winter   35.714286              7
+
+[321 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (85, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          33.285714  ...             134.794118                   34
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+316     WRG           2.000000  ...              43.500000                    2
+317     XNA          17.555556  ...             137.344262                   61
+318     XWA                NaN  ...             193.727273                   11
+319     YAK          18.000000  ...              43.000000                    3
+320     YUM          43.500000  ...              32.600000                    5
+
+[321 rows x 5 columns]
+2026-04-19 23:01:34,016 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=4.00s
+2026-04-19 23:05:46,706 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:05:49,859 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (62, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      RKS       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1145)
+('DEN', 1103)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('IAG', 1)
+('MFE', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (62, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+583     WRG     2   47.000000              1
+584     XNA     2   40.227273             22
+585     XWA     2  139.800000              5
+586     YAK     2   36.750000              4
+587     YUM     2   20.333333              3
+
+[588 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (62, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  115.954545             44
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+316     WRG  winter   29.666667              3
+317     XNA  winter  121.942857             70
+318     XWA  winter  193.727273             11
+319     YAK  winter   36.750000              4
+320     YUM  winter   35.714286              7
+
+[321 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (62, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          51.900000  ...             134.794118                   34
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+316     WRG           2.000000  ...              43.500000                    2
+317     XNA          17.555556  ...             137.344262                   61
+318     XWA                NaN  ...             193.727273                   11
+319     YAK          18.000000  ...              43.000000                    3
+320     YUM          43.500000  ...              32.600000                    5
+
+[321 rows x 5 columns]
+2026-04-19 23:05:49,859 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.15s
+2026-04-19 23:10:43,095 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:10:48,494 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (118, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      HOU     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      MHT        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1203)
+('DEN', 1110)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('ERI', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (118, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+588     WRG     2   35.000000              2
+589     XNA     2   40.227273             22
+590     XWA     2  139.800000              5
+591     YAK     2   36.750000              4
+592     YUM     2   20.333333              3
+
+[593 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (118, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  115.954545             44
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+317     WRG  winter   28.000000              4
+318     XNA  winter  121.942857             70
+319     XWA  winter  193.727273             11
+320     YAK  winter   36.750000              4
+321     YUM  winter   35.714286              7
+
+[322 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (118, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          51.900000  ...             134.794118                   34
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+317     WRG           2.000000  ...              36.666667                    3
+318     XNA          17.555556  ...             137.344262                   61
+319     XWA                NaN  ...             193.727273                   11
+320     YAK          18.000000  ...              43.000000                    3
+321     YUM          43.500000  ...              32.600000                    5
+
+[322 rows x 5 columns]
+2026-04-19 23:10:48,495 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=5.40s
+2026-04-19 23:15:41,148 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:15:44,593 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (75, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      OTH       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      HOU     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1203)
+('DEN', 1116)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('ERI', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     AVP                    1  ...      5.0000000000000000                   5
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+590     WRG     2   35.000000              2
+591     XNA     2   40.227273             22
+592     XWA     2  139.800000              5
+593     YAK     2   36.750000              4
+594     YUM     2   20.333333              3
+
+[595 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  winter   27.333333             15
+1       ABI  winter   48.900000             10
+2       ABQ  winter  113.622222             45
+3       ABR  winter  170.142857              7
+4       ABY  winter   64.500000              4
+..      ...     ...         ...            ...
+318     WRG  winter   28.000000              4
+319     XNA  winter  121.942857             70
+320     XWA  winter  193.727273             11
+321     YAK  winter   36.750000              4
+322     YUM  winter   35.714286              7
+
+[323 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          51.900000  ...             131.257143                   35
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              36.666667                    3
+319     XNA          17.555556  ...             137.344262                   61
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              32.600000                    5
+
+[323 rows x 5 columns]
+2026-04-19 23:15:44,594 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.45s
+2026-04-19 23:20:43,398 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:20:47,273 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (100, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('ORD', 1211)
+('DEN', 1134)
+('DFW', 1080)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('ERI', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (100, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+690     TUS     3   31.500000              2
+691     TXK     3  123.000000              1
+692     WRG     3   12.000000              1
+693     XNA     3   52.000000              2
+694     YUM     3    3.000000              1
+
+[695 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (100, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABQ  spring   56.000000              1
+1       ACT  spring   44.000000              1
+2       ACV  spring   87.500000              2
+3       ANC  spring   44.666667              3
+4       ASE  spring   22.000000              1
+..      ...     ...         ...            ...
+418     WRG  winter   28.000000              4
+419     XNA  winter  121.942857             70
+420     XWA  winter  193.727273             11
+421     YAK  winter   36.750000              4
+422     YUM  winter   35.714286              7
+
+[423 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (100, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              48.900000                   10
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              30.500000                    4
+319     XNA          17.555556  ...             134.634921                   63
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              27.666667                    6
+
+[323 rows x 5 columns]
+2026-04-19 23:20:47,273 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.87s
+2026-04-19 23:25:41,129 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:25:44,605 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (92, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      OTH       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      MHT        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1218)
+('ORD', 1211)
+('DEN', 1145)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('DRT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (92, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+734     VEL     3  129.000000              1
+735     VPS     3  142.000000              1
+736     WRG     3   28.000000              2
+737     XNA     3   49.600000              5
+738     YUM     3    3.000000              1
+
+[739 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (92, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABI  spring  168.000000              1
+1       ABQ  spring   56.000000              1
+2       ACT  spring   79.500000              2
+3       ACV  spring   87.500000              2
+4       ADQ  spring   11.000000              1
+..      ...     ...         ...            ...
+462     WRG  winter   28.000000              4
+463     XNA  winter  121.942857             70
+464     XWA  winter  193.727273             11
+465     YAK  winter   36.750000              4
+466     YUM  winter   35.714286              7
+
+[467 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (92, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              34.800000                   10
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              33.200000                    5
+319     XNA          17.555556  ...             130.696970                   66
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              27.666667                    6
+
+[323 rows x 5 columns]
+2026-04-19 23:25:44,605 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.48s
+2026-04-19 23:30:42,476 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-19 23:30:45,900 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (112, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      MHT        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DFW', 1218)
+('ORD', 1211)
+('DEN', 1153)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('DRT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (112, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+779     VEL     3  129.000000              1
+780     VPS     3   61.750000              4
+781     WRG     3   28.000000              2
+782     XNA     3   44.333333              6
+783     YUM     3    3.000000              1
+
+[784 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (112, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    6.000000              1
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ACT  spring   79.500000              2
+4       ACV  spring   87.500000              2
+..      ...     ...         ...            ...
+507     WRG  winter   28.000000              4
+508     XNA  winter  121.942857             70
+509     XWA  winter  193.727273             11
+510     YAK  winter   36.750000              4
+511     YUM  winter   35.714286              7
+
+[512 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (112, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE          12.400000  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              33.200000                    5
+319     XNA          17.555556  ...             129.014925                   67
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              27.666667                    6
+
+[323 rows x 5 columns]
+2026-04-19 23:30:45,900 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.42s
+2026-04-26 13:08:38,822 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:08:42,411 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:08:44,697 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (75, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1289)
+('ORD', 1267)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('DRT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+789     VEL     3   65.888889              9
+790     VPS     3   61.750000              4
+791     WRG     3   28.000000              2
+792     XNA     3   44.333333              6
+793     YUM     3    3.000000              1
+
+[794 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ACT  spring   79.500000              2
+4       ACV  spring   87.500000              2
+..      ...     ...         ...            ...
+517     WRG  winter   28.000000              4
+518     XNA  winter  121.942857             70
+519     XWA  winter  193.727273             11
+520     YAK  winter   36.750000              4
+521     YUM  winter   35.714286              7
+
+[522 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (75, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              33.200000                    5
+319     XNA          17.555556  ...             129.014925                   67
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              27.666667                    6
+
+[323 rows x 5 columns]
+2026-04-26 13:08:44,699 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=5.88s
+2026-04-26 13:08:48,219 | INFO | STDOUT
+*****************************Airports***************************
+Pas de nouvelle date pour agg_delay_by_wcombination_byairport 
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SAT      low-wind_medium-rain_low-snow        1.0              1   1
+12     BGM    medium-wind_high-rain_high-snow        5.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1289)
+('ORD', 1267)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('DRT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+Pas de nouvelle date pour agg_delay_by_airport_month 
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+789     VEL     3   65.888889              9
+790     VPS     3   61.750000              4
+791     WRG     3   28.000000              2
+792     XNA     3   44.333333              6
+793     YUM     3    3.000000              1
+
+[794 rows x 4 columns]
+Pas de nouvelle date pour agg_delay_by_airport_season 
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ACT  spring   79.500000              2
+4       ACV  spring   87.500000              2
+..      ...     ...         ...            ...
+517     WRG  winter   28.000000              4
+518     XNA  winter  121.942857             70
+519     XWA  winter  193.727273             11
+520     YAK  winter   36.750000              4
+521     YUM  winter   35.714286              7
+
+[522 rows x 4 columns]
+Pas de nouvelle date pour agg_delay_by_airport_weekend 
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR         156.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+318     WRG           2.000000  ...              33.200000                    5
+319     XNA          17.555556  ...             129.014925                   67
+320     XWA                NaN  ...             193.727273                   11
+321     YAK          18.000000  ...              43.000000                    3
+322     YUM          43.500000  ...              27.666667                    6
+
+[323 rows x 5 columns]
+2026-04-26 13:08:48,220 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=5.81s
+2026-04-26 13:10:44,889 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:10:48,748 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (65, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow   1.000000              1   1
+1      OTH       high-wind_high-rain_low-snow   1.000000              1   1
+2      APN       high-wind_low-rain_high-snow   6.000000              1   1
+3      RST        high-wind_low-rain_low-snow   1.000000              1   1
+4      MKE    high-wind_medium-rain_high-snow  13.200000              5   1
+5      OTZ     high-wind_medium-rain_low-snow   1.000000              1   1
+6      RST       low-wind_high-rain_high-snow  16.500000              2   1
+7      BTV        low-wind_high-rain_low-snow   1.000000              1   1
+8      LNK        low-wind_low-rain_high-snow   2.000000              1   1
+9      PLN         low-wind_low-rain_low-snow   1.000000              1   1
+10     DLH     low-wind_medium-rain_high-snow   4.000000              1   1
+11     SPS      low-wind_medium-rain_low-snow   1.000000              1   1
+12     RST    medium-wind_high-rain_high-snow   4.882353             17   1
+13     KTN     medium-wind_high-rain_low-snow   3.000000              1   1
+14     BGR     medium-wind_low-rain_high-snow   1.000000              1   1
+15     OTH      medium-wind_low-rain_low-snow   2.000000              1   1
+16     CAK  medium-wind_medium-rain_high-snow   3.000000              1   1
+17     MRY   medium-wind_medium-rain_low-snow   3.000000              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1481)
+('ORD', 1363)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('CSG', 1)
+('MFE', 1)
+('DRT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (65, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+796     VEL     3   65.888889              9
+797     VPS     3   61.750000              4
+798     WRG     3   28.000000              2
+799     XNA     3   44.333333              6
+800     YUM     3    3.000000              1
+
+[801 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (65, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ABR  spring    3.000000             16
+4       ACT  spring   79.500000              2
+..      ...     ...         ...            ...
+524     WRG  winter   28.000000              4
+525     XNA  winter  121.942857             70
+526     XWA  winter  193.727273             11
+527     YAK  winter   36.750000              4
+528     YUM  winter   35.714286              7
+
+[529 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (65, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+319     WRG           2.000000  ...              33.200000                    5
+320     XNA          17.555556  ...             129.014925                   67
+321     XWA                NaN  ...             193.727273                   11
+322     YAK          18.000000  ...              43.000000                    3
+323     YUM          43.500000  ...              27.666667                    6
+
+[324 rows x 5 columns]
+2026-04-26 13:10:48,748 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.86s
+2026-04-26 13:15:42,378 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:15:45,609 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (60, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow   1.000000              1   1
+1      OTH       high-wind_high-rain_low-snow   1.000000              1   1
+2      APN       high-wind_low-rain_high-snow   6.000000              1   1
+3      RST        high-wind_low-rain_low-snow   1.000000              1   1
+4      MKE    high-wind_medium-rain_high-snow  13.200000              5   1
+5      OTZ     high-wind_medium-rain_low-snow   1.000000              1   1
+6      RST       low-wind_high-rain_high-snow  16.500000              2   1
+7      BTV        low-wind_high-rain_low-snow   1.000000              1   1
+8      MHT        low-wind_low-rain_high-snow   2.000000              1   1
+9      PLN         low-wind_low-rain_low-snow   1.000000              1   1
+10     DLH     low-wind_medium-rain_high-snow   4.000000              1   1
+11     SPS      low-wind_medium-rain_low-snow   1.000000              1   1
+12     RST    medium-wind_high-rain_high-snow   4.882353             17   1
+13     KTN     medium-wind_high-rain_low-snow   3.000000              1   1
+14     BGR     medium-wind_low-rain_high-snow   1.000000              1   1
+15     OTH      medium-wind_low-rain_low-snow   2.000000              1   1
+16     CAK  medium-wind_medium-rain_high-snow   3.000000              1   1
+17     MRY   medium-wind_medium-rain_low-snow   3.000000              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1493)
+('ORD', 1363)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BPT', 1)
+('CSG', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (60, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+803     VPS     3   58.800000              5
+804     WRG     3   28.000000              2
+805     XNA     3   44.333333              6
+806     XWA     3    8.000000              1
+807     YUM     3    3.000000              1
+
+[808 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (60, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ABR  spring    3.000000             16
+4       ACT  spring   79.500000              2
+..      ...     ...         ...            ...
+531     WRG  winter   28.000000              4
+532     XNA  winter  121.942857             70
+533     XWA  winter  193.727273             11
+534     YAK  winter   36.750000              4
+535     YUM  winter   35.714286              7
+
+[536 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (60, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+319     WRG           2.000000  ...              33.200000                    5
+320     XNA          17.555556  ...             129.014925                   67
+321     XWA                NaN  ...             178.250000                   12
+322     YAK          18.000000  ...              43.000000                    3
+323     YUM          43.500000  ...              27.666667                    6
+
+[324 rows x 5 columns]
+2026-04-26 13:15:45,609 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.23s
+2026-04-26 13:20:42,052 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:20:45,694 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (37, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow   1.000000              1   1
+1      OTH       high-wind_high-rain_low-snow   1.000000              1   1
+2      APN       high-wind_low-rain_high-snow   6.000000              1   1
+3      RST        high-wind_low-rain_low-snow   1.000000              1   1
+4      MKE    high-wind_medium-rain_high-snow  13.200000              5   1
+5      OTZ     high-wind_medium-rain_low-snow   1.000000              1   1
+6      RST       low-wind_high-rain_high-snow  16.500000              2   1
+7      BTV        low-wind_high-rain_low-snow   1.000000              1   1
+8      LNK        low-wind_low-rain_high-snow   2.000000              1   1
+9      PLN         low-wind_low-rain_low-snow   1.000000              1   1
+10     ESC     low-wind_medium-rain_high-snow   4.000000              1   1
+11     SAT      low-wind_medium-rain_low-snow   1.000000              1   1
+12     RST    medium-wind_high-rain_high-snow   4.882353             17   1
+13     KTN     medium-wind_high-rain_low-snow   3.000000              1   1
+14     BGR     medium-wind_low-rain_high-snow   1.000000              1   1
+15     OTH      medium-wind_low-rain_low-snow   2.000000              1   1
+16     CAK  medium-wind_medium-rain_high-snow   3.000000              1   1
+17     MRY   medium-wind_medium-rain_low-snow   3.000000              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1498)
+('ORD', 1363)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BPT', 1)
+('CSG', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (37, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+806     VPS     3   58.800000              5
+807     WRG     3   28.000000              2
+808     XNA     3   44.333333              6
+809     XWA     3    8.000000              1
+810     YUM     3    3.000000              1
+
+[811 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (37, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ABR  spring    3.000000             16
+4       ACT  spring   79.500000              2
+..      ...     ...         ...            ...
+534     WRG  winter   28.000000              4
+535     XNA  winter  121.942857             70
+536     XWA  winter  193.727273             11
+537     YAK  winter   36.750000              4
+538     YUM  winter   35.714286              7
+
+[539 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (37, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+319     WRG           2.000000  ...              33.200000                    5
+320     XNA          17.555556  ...             129.014925                   67
+321     XWA                NaN  ...             178.250000                   12
+322     YAK          18.000000  ...              43.000000                    3
+323     YUM          43.500000  ...              27.666667                    6
+
+[324 rows x 5 columns]
+2026-04-26 13:20:45,694 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.64s
+2026-04-26 13:25:42,723 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:25:45,804 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (43, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow   1.000000              1   1
+1      OTH       high-wind_high-rain_low-snow   1.000000              1   1
+2      APN       high-wind_low-rain_high-snow   6.000000              1   1
+3      RST        high-wind_low-rain_low-snow   1.000000              1   1
+4      MKE    high-wind_medium-rain_high-snow  13.200000              5   1
+5      OTZ     high-wind_medium-rain_low-snow   1.000000              1   1
+6      RST       low-wind_high-rain_high-snow  16.500000              2   1
+7      BTV        low-wind_high-rain_low-snow   1.000000              1   1
+8      MHT        low-wind_low-rain_high-snow   2.000000              1   1
+9      PLN         low-wind_low-rain_low-snow   1.000000              1   1
+10     DLH     low-wind_medium-rain_high-snow   4.000000              1   1
+11     SAT      low-wind_medium-rain_low-snow   1.000000              1   1
+12     RST    medium-wind_high-rain_high-snow   4.882353             17   1
+13     KTN     medium-wind_high-rain_low-snow   3.000000              1   1
+14     BGR     medium-wind_low-rain_high-snow   1.000000              1   1
+15     OTH      medium-wind_low-rain_low-snow   2.000000              1   1
+16     CAK  medium-wind_medium-rain_high-snow   3.000000              1   1
+17     MRY   medium-wind_medium-rain_low-snow   3.000000              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1501)
+('ORD', 1363)
+('DFW', 1218)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BPT', 1)
+('CSG', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    1  ...   714.0000000000000000                 714
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (43, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+810     VPS     3   58.800000              5
+811     WRG     3   28.000000              2
+812     XNA     3   44.333333              6
+813     XWA     3    8.000000              1
+814     YUM     3    3.000000              1
+
+[815 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (43, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    7.777778              9
+1       ABI  spring  168.000000              1
+2       ABQ  spring   56.000000              1
+3       ABR  spring    3.000000             16
+4       ACT  spring   79.500000              2
+..      ...     ...         ...            ...
+538     WRG  winter   28.000000              4
+539     XNA  winter  121.942857             70
+540     XWA  winter  193.727273             11
+541     YAK  winter   36.750000              4
+542     YUM  winter   35.714286              7
+
+[543 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (43, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              32.181818                   11
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             129.166667                   36
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+319     WRG           2.000000  ...              33.200000                    5
+320     XNA          17.555556  ...             129.014925                   67
+321     XWA                NaN  ...             178.250000                   12
+322     YAK          18.000000  ...              43.000000                    3
+323     YUM          43.500000  ...              27.666667                    6
+
+[324 rows x 5 columns]
+2026-04-26 13:25:45,804 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.08s
+2026-04-26 13:30:41,379 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:30:45,190 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (142, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow   1.000000              1   1
+1      BGR       high-wind_high-rain_low-snow   1.000000              1   1
+2      APN       high-wind_low-rain_high-snow   6.000000              1   1
+3      RST        high-wind_low-rain_low-snow   1.000000              1   1
+4      MKE    high-wind_medium-rain_high-snow  13.200000              5   1
+5      OTZ     high-wind_medium-rain_low-snow   1.000000              1   1
+6      RST       low-wind_high-rain_high-snow  16.500000              2   1
+7      BTV        low-wind_high-rain_low-snow   1.000000              1   1
+8      LNK        low-wind_low-rain_high-snow   2.000000              1   1
+9      PLN         low-wind_low-rain_low-snow   1.000000              1   1
+10     DLH     low-wind_medium-rain_high-snow   4.000000              1   1
+11     SAT      low-wind_medium-rain_low-snow   1.000000              1   1
+12     RST    medium-wind_high-rain_high-snow   4.882353             17   1
+13     KTN     medium-wind_high-rain_low-snow   3.000000              1   1
+14     BGR     medium-wind_low-rain_high-snow   1.000000              1   1
+15     OTH      medium-wind_low-rain_low-snow   2.000000              1   1
+16     CAK  medium-wind_medium-rain_high-snow   3.000000              1   1
+17     MRY   medium-wind_medium-rain_low-snow   3.000000              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1507)
+('DFW', 1456)
+('ORD', 1400)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BPT', 1)
+('CSG', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     PIH                    1  ...   860.0000000000000000                 860
+2     RDD                    2  ...   504.5000000000000000                1009
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     LRD                    1  ...      6.0000000000000000                   6
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (142, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+829     VPS     3   43.714286              7
+830     WRG     3   28.000000              2
+831     XNA     3  122.545455             11
+832     XWA     3    8.000000              1
+833     YUM     3    3.000000              1
+
+[834 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (142, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    8.090909             11
+1       ABI  spring  168.000000              1
+2       ABQ  spring   24.000000              3
+3       ABR  spring    3.000000             16
+4       ACT  spring   45.000000              4
+..      ...     ...         ...            ...
+557     WRG  winter   28.000000              4
+558     XNA  winter  121.942857             70
+559     XWA  winter  193.727273             11
+560     YAK  winter   36.750000              4
+561     YUM  winter   35.714286              7
+
+[562 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (142, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              28.692308                   13
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             122.789474                   38
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+319     WRG           2.000000  ...              33.200000                    5
+320     XNA          17.555556  ...             135.083333                   72
+321     XWA                NaN  ...             178.250000                   12
+322     YAK          18.000000  ...              43.000000                    3
+323     YUM          43.500000  ...              27.666667                    6
+
+[324 rows x 5 columns]
+2026-04-26 13:30:45,190 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.81s
+2026-04-26 13:35:41,313 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:35:45,087 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (107, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      MSO        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      MHT        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     DLH     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     TOL    medium-wind_high-rain_high-snow        2.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     OTH      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1518)
+('DFW', 1456)
+('ORD', 1400)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BPT', 1)
+('CSG', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     TWF                    1  ...   873.0000000000000000                 873
+2     PIH                    1  ...   860.0000000000000000                 860
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     MYR                    2  ...      6.0000000000000000                  12
+2     LRD                    1  ...      6.0000000000000000                   6
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (107, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+837     VPS     3   41.375000              8
+838     WRG     3   28.000000              2
+839     XNA     3  113.916667             12
+840     XWA     3    9.333333              3
+841     YUM     3    3.000000              1
+
+[842 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (107, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    9.076923             13
+1       ABI  spring  168.000000              1
+2       ABQ  spring   22.500000              4
+3       ABR  spring    3.000000             16
+4       ACT  spring   45.000000              4
+..      ...     ...         ...            ...
+565     WRG  winter   28.000000              4
+566     XNA  winter  121.942857             70
+567     XWA  winter  193.727273             11
+568     YAK  winter   36.750000              4
+569     YUM  winter   35.714286              7
+
+[570 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (107, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              26.800000                   15
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             120.102564                   39
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+320     WRG           2.000000  ...              33.200000                    5
+321     XNA          17.555556  ...             133.493151                   73
+322     XWA                NaN  ...             154.214286                   14
+323     YAK          18.000000  ...              43.000000                    3
+324     YUM          43.500000  ...              27.666667                    6
+
+[325 rows x 5 columns]
+2026-04-26 13:35:45,087 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.77s
+2026-04-26 13:40:42,001 | INFO | START section=airport_analytics module=transformation.main_Airport_analytics
+2026-04-26 13:40:45,875 | INFO | STDOUT
+*****************************Airports***************************
+mise a jour de agg_delay_by_wcombination_byairport 
+Nombre de lignes : (82, 5)
+mise a jour de agg_wcombination_byairport_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+le meilleur aéroport dans chaque condition météo:
+   airport                weather_combination  avg_delay  total_flights  rn
+0      FAT      high-wind_high-rain_high-snow        1.0              1   1
+1      BGR       high-wind_high-rain_low-snow        1.0              1   1
+2      APN       high-wind_low-rain_high-snow        6.0              1   1
+3      RST        high-wind_low-rain_low-snow        1.0              1   1
+4      MKE    high-wind_medium-rain_high-snow       13.2              5   1
+5      OTZ     high-wind_medium-rain_low-snow        1.0              1   1
+6      RST       low-wind_high-rain_high-snow       16.5              2   1
+7      BTV        low-wind_high-rain_low-snow        1.0              1   1
+8      LNK        low-wind_low-rain_high-snow        2.0              1   1
+9      PLN         low-wind_low-rain_low-snow        1.0              1   1
+10     ESC     low-wind_medium-rain_high-snow        4.0              1   1
+11     SPS      low-wind_medium-rain_low-snow        1.0              1   1
+12     TOL    medium-wind_high-rain_high-snow        2.0              1   1
+13     KTN     medium-wind_high-rain_low-snow        3.0              1   1
+14     BGR     medium-wind_low-rain_high-snow        1.0              1   1
+15     SCC      medium-wind_low-rain_low-snow        2.0              1   1
+16     CAK  medium-wind_medium-rain_high-snow        3.0              1   1
+17     MRY   medium-wind_medium-rain_low-snow        3.0              1   1
+Top 3 airports with the most frequent bad weather:
+('DEN', 1526)
+('DFW', 1456)
+('ORD', 1413)
+3 airports with the least frequent bad weather:
+('ADK', 1)
+('BFL', 1)
+('BPT', 1)
+3 airports with the highest delay due to the bad weather:
+  airport  bad_weather_flights  ...      avg_delay_weather total_delay_weather
+0     PPG                    1  ...  1006.0000000000000000                1006
+1     TWF                    1  ...   873.0000000000000000                 873
+2     PIH                    1  ...   860.0000000000000000                 860
+
+[3 rows x 5 columns]
+3 airports with the lowest delay due to the bad weather:
+  airport  bad_weather_flights  ...       avg_delay_weather total_delay_weather
+0     OTZ                    1  ...  1.00000000000000000000                   1
+1     SCC                    1  ...      2.0000000000000000                   2
+2     MYR                    2  ...      6.0000000000000000                  12
+
+[3 rows x 5 columns]
+mise a jour de agg_delay_by_airport_month 
+Nombre de lignes : (82, 5)
+mise a jour de agg_airport_month_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+Average delay per airport by month: 
+    airport month   avg_delay  total_flights
+0       ABE     1   32.363636             11
+1       ABI     1   59.200000              5
+2       ABQ     1  150.400000             20
+3       ABR     1  117.000000              5
+4       ABY     1   64.500000              4
+..      ...   ...         ...            ...
+841     VPS     3   41.375000              8
+842     WRG     3   28.000000              2
+843     XNA     3  105.384615             13
+844     XWA     3    9.333333              3
+845     YUM     3    3.000000              1
+
+[846 rows x 4 columns]
+mise a jour de agg_delay_by_airport_season 
+Nombre de lignes : (82, 5)
+mise a jour de agg_airport_season_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+Average delay per airport by season: 
+    airport  season   avg_delay  total_flights
+0       ABE  spring    9.076923             13
+1       ABI  spring  168.000000              1
+2       ABQ  spring   22.500000              4
+3       ABR  spring    3.000000             16
+4       ACT  spring   45.000000              4
+..      ...     ...         ...            ...
+569     WRG  winter   28.000000              4
+570     XNA  winter  121.942857             70
+571     XWA  winter  193.727273             11
+572     YAK  winter   36.750000              4
+573     YUM  winter   35.714286              7
+
+[574 rows x 4 columns]
+mise a jour de agg_delay_by_airport_weekend 
+Nombre de lignes : (82, 5)
+mise a jour de agg_airport_weekend_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+Average delay per airport by weekend: 
+    airport  avg_delay_weekend  ...  avg_delay_non_weekend  flights_non_weekend
+0       ABE           9.692308  ...              26.800000                   15
+1       ABI                NaN  ...              59.727273                   11
+2       ABQ          51.900000  ...             120.102564                   39
+3       ABR          12.000000  ...             172.500000                    6
+4       ABY                NaN  ...              64.500000                    4
+..      ...                ...  ...                    ...                  ...
+321     WRG           2.000000  ...              33.200000                    5
+322     XNA          16.100000  ...             133.493151                   73
+323     XWA                NaN  ...             154.214286                   14
+324     YAK          18.000000  ...              43.000000                    3
+325     YUM          43.500000  ...              27.666667                    6
+
+[326 rows x 5 columns]
+2026-04-26 13:40:45,875 | INFO | SUCCESS section=airport_analytics module=transformation.main_Airport_analytics duration=3.87s

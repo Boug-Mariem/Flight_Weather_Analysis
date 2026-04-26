@@ -1,0 +1,834 @@
+2026-04-19 22:27:40,853 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 22:27:43,660 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (150, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        Southwest Airlines Co.   61.666667              6   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        American Airlines Inc.  348.800000              5   3
+..      ...                           ...         ...            ...  ..
+253     VEL         Skywest Airlines Inc.  103.333333              6   1
+254     XNA        American Airlines Inc.   19.666667              6   1
+255     XNA  American Eagle Airlines Inc.   67.250000             32   2
+256     XNA         Skywest Airlines Inc.  277.750000              8   3
+257     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[258 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  348.800000              5   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        Southwest Airlines Co.   61.666667              6   3
+..      ...                           ...         ...            ...  ..
+253     VEL         Skywest Airlines Inc.  103.333333              6   1
+254     XNA         Skywest Airlines Inc.  277.750000              8   1
+255     XNA  American Eagle Airlines Inc.   67.250000             32   2
+256     XNA        American Airlines Inc.   19.666667              6   3
+257     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[258 rows x 5 columns]
+2026-04-19 22:27:43,661 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.81s
+2026-04-19 22:32:11,931 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 22:32:14,873 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (144, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        Southwest Airlines Co.   61.666667              6   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        American Airlines Inc.  348.800000              5   3
+..      ...                           ...         ...            ...  ..
+259     VEL         Skywest Airlines Inc.  103.333333              6   1
+260     XNA        American Airlines Inc.   19.666667              6   1
+261     XNA  American Eagle Airlines Inc.   65.818182             33   2
+262     XNA         Skywest Airlines Inc.  277.750000              8   3
+263     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[264 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  348.800000              5   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        Southwest Airlines Co.   61.666667              6   3
+..      ...                           ...         ...            ...  ..
+259     VEL         Skywest Airlines Inc.  103.333333              6   1
+260     XNA         Skywest Airlines Inc.  277.750000              8   1
+261     XNA  American Eagle Airlines Inc.   65.818182             33   2
+262     XNA        American Airlines Inc.   19.666667              6   3
+263     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[264 rows x 5 columns]
+2026-04-19 22:32:14,873 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.94s
+2026-04-19 22:35:45,188 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 22:35:47,950 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (30, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        Southwest Airlines Co.   61.666667              6   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        American Airlines Inc.  348.800000              5   3
+..      ...                           ...         ...            ...  ..
+262     VEL         Skywest Airlines Inc.  103.333333              6   1
+263     XNA        American Airlines Inc.   19.666667              6   1
+264     XNA  American Eagle Airlines Inc.   65.818182             33   2
+265     XNA         Skywest Airlines Inc.  277.750000              8   3
+266     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[267 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  348.800000              5   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        Southwest Airlines Co.   61.666667              6   3
+..      ...                           ...         ...            ...  ..
+262     VEL         Skywest Airlines Inc.  103.333333              6   1
+263     XNA         Skywest Airlines Inc.  277.750000              8   1
+264     XNA  American Eagle Airlines Inc.   65.818182             33   2
+265     XNA        American Airlines Inc.   19.666667              6   3
+266     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[267 rows x 5 columns]
+2026-04-19 22:35:47,951 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.76s
+2026-04-19 22:38:44,248 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 22:38:46,594 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (9, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        Southwest Airlines Co.   61.666667              6   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        American Airlines Inc.  348.800000              5   3
+..      ...                           ...         ...            ...  ..
+263     VEL         Skywest Airlines Inc.  103.333333              6   1
+264     XNA        American Airlines Inc.   19.666667              6   1
+265     XNA  American Eagle Airlines Inc.   65.818182             33   2
+266     XNA         Skywest Airlines Inc.  277.750000              8   3
+267     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[268 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  348.800000              5   1
+3       ABQ         Skywest Airlines Inc.   62.800000              5   2
+4       ABQ        Southwest Airlines Co.   61.666667              6   3
+..      ...                           ...         ...            ...  ..
+263     VEL         Skywest Airlines Inc.  103.333333              6   1
+264     XNA         Skywest Airlines Inc.  277.750000              8   1
+265     XNA  American Eagle Airlines Inc.   65.818182             33   2
+266     XNA        American Airlines Inc.   19.666667              6   3
+267     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[268 rows x 5 columns]
+2026-04-19 22:38:46,594 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.35s
+2026-04-19 22:40:43,366 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 22:40:45,719 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (202, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   66.428571              7   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  274.000000              8   3
+..      ...                           ...         ...            ...  ..
+277     VEL         Skywest Airlines Inc.  103.333333              6   1
+278     XNA        American Airlines Inc.   19.666667              6   1
+279     XNA  American Eagle Airlines Inc.   64.441176             34   2
+280     XNA         Skywest Airlines Inc.  277.750000              8   3
+281     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[282 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  274.000000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   66.428571              7   3
+..      ...                           ...         ...            ...  ..
+277     VEL         Skywest Airlines Inc.  103.333333              6   1
+278     XNA         Skywest Airlines Inc.  277.750000              8   1
+279     XNA  American Eagle Airlines Inc.   64.441176             34   2
+280     XNA        American Airlines Inc.   19.666667              6   3
+281     XWA         Skywest Airlines Inc.  211.555556              9   1
+
+[282 rows x 5 columns]
+2026-04-19 22:40:45,719 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.35s
+2026-04-19 23:00:44,317 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:00:47,798 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (250, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   61.375000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  274.000000              8   3
+..      ...                           ...         ...            ...  ..
+291     VEL         Skywest Airlines Inc.  103.333333              6   1
+292     XNA        American Airlines Inc.   19.666667              6   1
+293     XNA              Republic Airways   57.000000              5   2
+294     XNA  American Eagle Airlines Inc.   64.441176             34   3
+295     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[296 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  274.000000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   61.375000              8   3
+..      ...                           ...         ...            ...  ..
+291     VEL         Skywest Airlines Inc.  103.333333              6   1
+292     XNA         Skywest Airlines Inc.  277.750000              8   1
+293     XNA  American Eagle Airlines Inc.   64.441176             34   2
+294     XNA              Republic Airways   57.000000              5   3
+295     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[296 rows x 5 columns]
+2026-04-19 23:00:47,798 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=3.48s
+2026-04-19 23:01:29,896 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:01:32,796 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (103, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   61.375000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  274.000000              8   3
+..      ...                           ...         ...            ...  ..
+296     VEL         Skywest Airlines Inc.  103.333333              6   1
+297     XNA        American Airlines Inc.   19.666667              6   1
+298     XNA              Republic Airways   57.000000              5   2
+299     XNA  American Eagle Airlines Inc.   64.441176             34   3
+300     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[301 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  274.000000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   61.375000              8   3
+..      ...                           ...         ...            ...  ..
+296     VEL         Skywest Airlines Inc.  103.333333              6   1
+297     XNA         Skywest Airlines Inc.  277.750000              8   1
+298     XNA  American Eagle Airlines Inc.   64.441176             34   2
+299     XNA              Republic Airways   57.000000              5   3
+300     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[301 rows x 5 columns]
+2026-04-19 23:01:32,796 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.90s
+2026-04-19 23:05:46,663 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:05:48,947 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (49, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   61.375000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  225.272727             11   3
+..      ...                           ...         ...            ...  ..
+297     VEL         Skywest Airlines Inc.  103.333333              6   1
+298     XNA        American Airlines Inc.   19.666667              6   1
+299     XNA              Republic Airways   57.000000              5   2
+300     XNA  American Eagle Airlines Inc.   64.441176             34   3
+301     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[302 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  225.272727             11   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   61.375000              8   3
+..      ...                           ...         ...            ...  ..
+297     VEL         Skywest Airlines Inc.  103.333333              6   1
+298     XNA         Skywest Airlines Inc.  277.750000              8   1
+299     XNA  American Eagle Airlines Inc.   64.441176             34   2
+300     XNA              Republic Airways   57.000000              5   3
+301     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[302 rows x 5 columns]
+2026-04-19 23:05:48,947 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.28s
+2026-04-19 23:10:43,188 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:10:47,144 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (165, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   61.375000              8   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  225.272727             11   3
+..      ...                           ...         ...            ...  ..
+307     VEL         Skywest Airlines Inc.  103.333333              6   1
+308     XNA        American Airlines Inc.   19.666667              6   1
+309     XNA              Republic Airways   57.000000              5   2
+310     XNA  American Eagle Airlines Inc.   64.441176             34   3
+311     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[312 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  225.272727             11   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   61.375000              8   3
+..      ...                           ...         ...            ...  ..
+307     VEL         Skywest Airlines Inc.  103.333333              6   1
+308     XNA         Skywest Airlines Inc.  277.750000              8   1
+309     XNA  American Eagle Airlines Inc.   64.441176             34   2
+310     XNA              Republic Airways   57.000000              5   3
+311     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[312 rows x 5 columns]
+2026-04-19 23:10:47,145 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=3.96s
+2026-04-19 23:15:41,164 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:15:43,531 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (83, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   55.777778              9   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  225.272727             11   3
+..      ...                           ...         ...            ...  ..
+309     VEL         Skywest Airlines Inc.   82.625000              8   1
+310     XNA        American Airlines Inc.   19.666667              6   1
+311     XNA              Republic Airways   57.000000              5   2
+312     XNA  American Eagle Airlines Inc.   64.441176             34   3
+313     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[314 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  225.272727             11   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   55.777778              9   3
+..      ...                           ...         ...            ...  ..
+309     VEL         Skywest Airlines Inc.   82.625000              8   1
+310     XNA         Skywest Airlines Inc.  277.750000              8   1
+311     XNA  American Eagle Airlines Inc.   64.441176             34   2
+312     XNA              Republic Airways   57.000000              5   3
+313     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[314 rows x 5 columns]
+2026-04-19 23:15:43,531 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.37s
+2026-04-19 23:20:43,377 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:20:46,203 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (92, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ         Skywest Airlines Inc.   55.777778              9   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  211.166667             12   3
+..      ...                           ...         ...            ...  ..
+314     WRG          Alaska Airlines Inc.   24.800000              5   1
+315     XNA        American Airlines Inc.   19.666667              6   1
+316     XNA              Republic Airways   57.000000              5   2
+317     XNA  American Eagle Airlines Inc.   64.441176             34   3
+318     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[319 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   48.900000             10   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   55.777778              9   3
+..      ...                           ...         ...            ...  ..
+314     WRG          Alaska Airlines Inc.   24.800000              5   1
+315     XNA         Skywest Airlines Inc.  277.750000              8   1
+316     XNA  American Eagle Airlines Inc.   64.441176             34   2
+317     XNA              Republic Airways   57.000000              5   3
+318     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[319 rows x 5 columns]
+2026-04-19 23:20:46,203 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.83s
+2026-04-19 23:25:41,084 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:25:43,447 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (73, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ         Skywest Airlines Inc.   55.777778              9   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  211.166667             12   3
+..      ...                           ...         ...            ...  ..
+321     WRG          Alaska Airlines Inc.   28.000000              6   1
+322     XNA        American Airlines Inc.   19.666667              6   1
+323     XNA              Republic Airways   57.000000              5   2
+324     XNA  American Eagle Airlines Inc.   64.361111             36   3
+325     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[326 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   42.428571              7   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   55.777778              9   3
+..      ...                           ...         ...            ...  ..
+321     WRG          Alaska Airlines Inc.   28.000000              6   1
+322     XNA         Skywest Airlines Inc.  248.888889              9   1
+323     XNA  American Eagle Airlines Inc.   64.361111             36   2
+324     XNA              Republic Airways   57.000000              5   3
+325     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[326 rows x 5 columns]
+2026-04-19 23:25:43,447 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.36s
+2026-04-19 23:30:42,543 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-19 23:30:45,013 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (155, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ         Skywest Airlines Inc.   55.777778              9   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ        American Airlines Inc.  211.166667             12   3
+..      ...                           ...         ...            ...  ..
+326     WRG          Alaska Airlines Inc.   28.000000              6   1
+327     XNA        American Airlines Inc.   19.666667              6   1
+328     XNA              Republic Airways   57.000000              5   2
+329     XNA  American Eagle Airlines Inc.   63.108108             37   3
+330     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[331 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABQ        Southwest Airlines Co.   70.777778              9   2
+4       ABQ         Skywest Airlines Inc.   55.777778              9   3
+..      ...                           ...         ...            ...  ..
+326     WRG          Alaska Airlines Inc.   28.000000              6   1
+327     XNA         Skywest Airlines Inc.  248.888889              9   1
+328     XNA  American Eagle Airlines Inc.   63.108108             37   2
+329     XNA              Republic Airways   57.000000              5   3
+330     XWA         Skywest Airlines Inc.  193.727273             11   1
+
+[331 rows x 5 columns]
+2026-04-19 23:30:45,013 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.47s
+2026-04-26 13:08:38,816 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:08:42,283 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (76, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABE  American Eagle Airlines Inc.    5.000000              1   2
+2       ABE                 Allegiant Air    9.727273             11   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ          Alaska Airlines Inc.   32.000000              2   1
+..      ...                           ...         ...            ...  ..
+621     XNA        American Airlines Inc.   19.666667              6   1
+622     XNA              Republic Airways   57.000000              5   2
+623     XNA  American Eagle Airlines Inc.   63.108108             37   3
+624     XWA         Skywest Airlines Inc.  193.727273             11   1
+625     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[626 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABE                 Allegiant Air    9.727273             11   2
+2       ABE  American Eagle Airlines Inc.    5.000000              1   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ        American Airlines Inc.  211.166667             12   1
+..      ...                           ...         ...            ...  ..
+621     XNA           Delta Air Lines Inc  553.500000              2   1
+622     XNA                  Endeavor Air  442.000000              2   2
+623     XNA                  PSA Airlines  421.333333              3   3
+624     XWA         Skywest Airlines Inc.  193.727273             11   1
+625     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[626 rows x 5 columns]
+2026-04-26 13:08:42,284 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=3.47s
+2026-04-26 13:08:42,360 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:08:46,780 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABE  American Eagle Airlines Inc.    5.000000              1   2
+2       ABE                 Allegiant Air    9.727273             11   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ          Alaska Airlines Inc.   32.000000              2   1
+..      ...                           ...         ...            ...  ..
+621     XNA        American Airlines Inc.   19.666667              6   1
+622     XNA              Republic Airways   57.000000              5   2
+623     XNA  American Eagle Airlines Inc.   63.108108             37   3
+624     XWA         Skywest Airlines Inc.  193.727273             11   1
+625     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[626 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABE                 Allegiant Air    9.727273             11   2
+2       ABE  American Eagle Airlines Inc.    5.000000              1   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ        American Airlines Inc.  211.166667             12   1
+..      ...                           ...         ...            ...  ..
+621     XNA           Delta Air Lines Inc  553.500000              2   1
+622     XNA                  Endeavor Air  442.000000              2   2
+623     XNA                  PSA Airlines  421.333333              3   3
+624     XWA         Skywest Airlines Inc.  193.727273             11   1
+625     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[626 rows x 5 columns]
+2026-04-26 13:08:46,780 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=4.42s
+2026-04-26 13:10:44,869 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:10:47,219 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (55, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABE  American Eagle Airlines Inc.    5.000000              1   2
+2       ABE                 Allegiant Air    9.727273             11   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ          Alaska Airlines Inc.   32.000000              2   1
+..      ...                           ...         ...            ...  ..
+622     XNA        American Airlines Inc.   19.666667              6   1
+623     XNA              Republic Airways   57.000000              5   2
+624     XNA  American Eagle Airlines Inc.   63.108108             37   3
+625     XWA         Skywest Airlines Inc.  193.727273             11   1
+626     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[627 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABE                 Allegiant Air    9.727273             11   2
+2       ABE  American Eagle Airlines Inc.    5.000000              1   3
+3       ABI  American Eagle Airlines Inc.   59.727273             11   1
+4       ABQ        American Airlines Inc.  211.166667             12   1
+..      ...                           ...         ...            ...  ..
+622     XNA           Delta Air Lines Inc  553.500000              2   1
+623     XNA                  Endeavor Air  442.000000              2   2
+624     XNA                  PSA Airlines  421.333333              3   3
+625     XWA         Skywest Airlines Inc.  193.727273             11   1
+626     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[627 rows x 5 columns]
+2026-04-26 13:10:47,220 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.35s
+2026-04-26 13:15:42,477 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:15:44,739 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (39, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+300     VPS           Delta Air Lines Inc   12.500000              2   1
+301     WRG          Alaska Airlines Inc.   28.000000              6   1
+302     XNA        American Airlines Inc.   19.666667              6   1
+303     XWA         Skywest Airlines Inc.  178.250000             12   1
+304     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[305 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+300     VPS                 Allegiant Air  531.666667              3   1
+301     WRG          Alaska Airlines Inc.   28.000000              6   1
+302     XNA           Delta Air Lines Inc  553.500000              2   1
+303     XWA         Skywest Airlines Inc.  178.250000             12   1
+304     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[305 rows x 5 columns]
+2026-04-26 13:15:44,740 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.26s
+2026-04-26 13:20:42,015 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:20:44,649 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (23, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS           Delta Air Lines Inc   12.500000              2   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA        American Airlines Inc.   19.666667              6   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS                 Allegiant Air  531.666667              3   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA           Delta Air Lines Inc  553.500000              2   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+2026-04-26 13:20:44,649 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.63s
+2026-04-26 13:25:42,702 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:25:44,934 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (28, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS           Delta Air Lines Inc   12.500000              2   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA        American Airlines Inc.   19.666667              6   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   37.875000              8   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS                 Allegiant Air  531.666667              3   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA           Delta Air Lines Inc  553.500000              2   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+2026-04-26 13:25:44,934 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.23s
+2026-04-26 13:30:41,444 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:30:44,305 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (112, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS           Delta Air Lines Inc   12.500000              2   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA        American Airlines Inc.   22.428571              7   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   32.200000             10   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+301     VPS                 Allegiant Air  531.666667              3   1
+302     WRG          Alaska Airlines Inc.   28.000000              6   1
+303     XNA           Delta Air Lines Inc  553.500000              2   1
+304     XWA         Skywest Airlines Inc.  178.250000             12   1
+305     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[306 rows x 5 columns]
+2026-04-26 13:30:44,306 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.86s
+2026-04-26 13:35:41,453 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:35:44,178 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (126, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+302     VPS           Delta Air Lines Inc   12.500000              2   1
+303     WRG          Alaska Airlines Inc.   28.000000              6   1
+304     XNA        American Airlines Inc.   22.428571              7   1
+305     XWA         Skywest Airlines Inc.  154.214286             14   1
+306     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[307 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   31.090909             11   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+302     VPS                 Allegiant Air  531.666667              3   1
+303     WRG          Alaska Airlines Inc.   28.000000              6   1
+304     XNA           Delta Air Lines Inc  553.500000              2   1
+305     XWA         Skywest Airlines Inc.  154.214286             14   1
+306     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[307 rows x 5 columns]
+2026-04-26 13:35:44,178 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.72s
+2026-04-26 13:40:42,015 | INFO | START section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics
+2026-04-26 13:40:44,966 | INFO | STDOUT
+*****************************Airports/Airlines***************************
+mise a jour de airline_airport_bad_weather
+Nombre de lignes : (63, 5)
+mise a jour de agg_airline_airport_bad_weather_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+Top 3 Airlines with Lowest Average Delay per Airport during Bad Weather (only airlines with at least 5 flights): 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE                  Endeavor Air    1.000000              1   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ          Alaska Airlines Inc.   32.000000              2   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+304     VPS           Delta Air Lines Inc   12.500000              2   1
+305     WRG          Alaska Airlines Inc.   28.000000              6   1
+306     XNA        American Airlines Inc.   22.428571              7   1
+307     XWA         Skywest Airlines Inc.  154.214286             14   1
+308     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[309 rows x 5 columns]
+Pas de nouvelle date pour agg_airline_airport_bad_weather 
+Bottom 3 Airlines with Highest Average Delay per Airport during Bad Weather(only airlines with at least 5 flights) : 
+    airport                       airline   avg_delay  total_flights  rn
+0       ABE         Skywest Airlines Inc.   31.090909             11   1
+1       ABI  American Eagle Airlines Inc.   59.727273             11   1
+2       ABQ        American Airlines Inc.  211.166667             12   1
+3       ABR         Skywest Airlines Inc.   53.869565             23   1
+4       ABY                  Endeavor Air   50.000000              3   1
+..      ...                           ...         ...            ...  ..
+304     VPS                 Allegiant Air  531.666667              3   1
+305     WRG          Alaska Airlines Inc.   28.000000              6   1
+306     XNA           Delta Air Lines Inc  553.500000              2   1
+307     XWA         Skywest Airlines Inc.  154.214286             14   1
+308     YAK          Alaska Airlines Inc.   36.750000              4   1
+
+[309 rows x 5 columns]
+2026-04-26 13:40:44,966 | INFO | SUCCESS section=airline_airport_analytics module=transformation.main_Airline_Airport_analytics duration=2.95s

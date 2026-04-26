@@ -1,0 +1,282 @@
+2026-04-19 22:27:49,104 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 22:27:51,037 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (low-wind_low-rain_low-snow)
+Avg delay: 84.40 min
+Based on 40 flights
+*** avec Airports et airline
+Prediction for LAX (low-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 67.39 min
+Based on 33 flights
+2026-04-19 22:27:51,037 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.93s
+2026-04-19 22:32:21,667 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 22:32:24,368 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 63.08 min
+Based on 13 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 68.50 min
+Based on 10 flights
+2026-04-19 22:32:24,368 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.70s
+2026-04-19 22:35:53,041 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 22:35:54,941 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 64.21 min
+Based on 14 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-19 22:35:54,941 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.90s
+2026-04-19 22:38:50,996 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 22:38:52,881 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (high-wind_low-rain_low-snow)
+Avg delay: 48.00 min
+Based on 4 flights
+*** avec Airports et airline
+Prediction for LAX (high-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 18.33 min
+Based on 3 flights
+2026-04-19 22:38:52,881 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.88s
+2026-04-19 22:40:49,779 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 22:40:51,461 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Avg delay: 76.02 min
+Based on 43 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.30 min
+Based on 20 flights
+2026-04-19 22:40:51,461 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.68s
+2026-04-19 23:00:54,115 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:00:55,679 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Avg delay: 84.11 min
+Based on 45 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.30 min
+Based on 20 flights
+2026-04-19 23:00:55,680 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.56s
+2026-04-19 23:01:37,188 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:01:38,674 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Avg delay: 51.67 min
+Based on 12 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 51.67 min
+Based on 12 flights
+2026-04-19 23:01:38,674 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.49s
+2026-04-19 23:05:53,386 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:05:55,027 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Avg delay: 109.74 min
+Based on 73 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 84.53 min
+Based on 30 flights
+2026-04-19 23:05:55,027 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.64s
+2026-04-19 23:10:52,171 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:10:54,188 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Avg delay: 115.42 min
+Based on 81 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 101.68 min
+Based on 34 flights
+2026-04-19 23:10:54,189 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.02s
+2026-04-19 23:15:47,346 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:15:48,860 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (high-wind_medium-rain_low-snow)
+Avg delay: 97.83 min
+Based on 6 flights
+*** avec Airports et airline
+Prediction for LAX (high-wind_medium-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 31.33 min
+Based on 3 flights
+2026-04-19 23:15:48,860 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.51s
+2026-04-19 23:20:50,916 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:20:52,582 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 64.21 min
+Based on 14 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-19 23:20:52,582 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.67s
+2026-04-19 23:25:47,280 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:25:49,411 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (low-wind_low-rain_low-snow)
+Avg delay: 83.63 min
+Based on 41 flights
+*** avec Airports et airline
+Prediction for LAX (low-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 67.39 min
+Based on 33 flights
+2026-04-19 23:25:49,411 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.13s
+2026-04-19 23:30:48,203 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-19 23:30:49,800 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 64.21 min
+Based on 14 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-19 23:30:49,800 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.60s
+2026-04-26 13:08:52,028 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:08:52,046 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:08:54,054 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Avg delay: 167.00 min
+Based on 16 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 103.33 min
+Based on 15 flights
+2026-04-26 13:08:54,054 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.01s
+2026-04-26 13:08:54,059 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Avg delay: 167.00 min
+Based on 16 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_medium-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 103.33 min
+Based on 15 flights
+2026-04-26 13:08:54,059 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.03s
+2026-04-26 13:10:52,832 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:10:54,394 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 93.23 min
+Based on 22 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-26 13:10:54,394 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.56s
+2026-04-26 13:15:48,266 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:15:50,324 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 93.23 min
+Based on 22 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-26 13:15:50,324 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=2.06s
+2026-04-26 13:20:49,079 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:20:51,009 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 93.23 min
+Based on 22 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-26 13:20:51,010 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.93s
+2026-04-26 13:25:48,350 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:25:49,953 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 93.23 min
+Based on 22 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-26 13:25:49,953 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.60s
+2026-04-26 13:30:48,248 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:30:50,135 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Avg delay: 113.08 min
+Based on 86 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_high-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 97.55 min
+Based on 38 flights
+2026-04-26 13:30:50,135 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.89s
+2026-04-26 13:35:48,209 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:35:50,115 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+No historical data available !!
+*** avec Airports et airline
+No data for this airline. Fallback to airport only.
+No historical data available !!
+2026-04-26 13:35:50,115 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.91s
+2026-04-26 13:40:48,792 | INFO | START section=prediction module=transformation.main_Prediction
+2026-04-26 13:40:50,612 | INFO | STDOUT
+*****************************Predction***************************
+*** avec Airports seulement
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Avg delay: 93.23 min
+Based on 22 flights
+*** avec Airports et airline
+Prediction for LAX (medium-wind_low-rain_low-snow)
+Airline: Skywest Airlines Inc.
+Avg delay: 69.45 min
+Based on 11 flights
+2026-04-26 13:40:50,612 | INFO | SUCCESS section=prediction module=transformation.main_Prediction duration=1.82s

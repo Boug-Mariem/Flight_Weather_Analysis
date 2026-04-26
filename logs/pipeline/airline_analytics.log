@@ -1,0 +1,1252 @@
+2026-04-19 22:27:40,780 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 22:27:43,870 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (111, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 16)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Frontier Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7         Republic Airways  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                33276
+1    Allegiant Air  ...                23504
+2  JetBlue Airways  ...                13403
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                10527
+1  American Eagle Airlines Inc.  ...                54855
+2         United Air Lines Inc.  ...                35529
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   124
+1           PSA Airlines  ...                   190
+2  Skywest Airlines Inc.  ...                  1886
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                    92
+1  American Eagle Airlines Inc.  ...                   798
+2          Alaska Airlines Inc.  ...                   239
+
+[3 rows x 4 columns]
+2026-04-19 22:27:43,871 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=3.09s
+2026-04-19 22:32:11,918 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 22:32:15,047 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (106, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 17), datetime.date(2023, 2, 18)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1          JetBlue Airways  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Frontier Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                34492
+1    Allegiant Air  ...                24019
+2  JetBlue Airways  ...                13617
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                10969
+1  American Eagle Airlines Inc.  ...                57243
+2        Hawaiian Airlines Inc.  ...                 6285
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   131
+1           PSA Airlines  ...                   198
+2  Skywest Airlines Inc.  ...                  1926
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   105
+1  American Eagle Airlines Inc.  ...                   828
+2          Alaska Airlines Inc.  ...                   251
+
+[3 rows x 4 columns]
+2026-04-19 22:32:15,047 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=3.13s
+2026-04-19 22:35:45,766 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 22:35:48,354 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (40, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 19), datetime.date(2023, 2, 20)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1          JetBlue Airways  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Frontier Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                34492
+1    Allegiant Air  ...                24165
+2  JetBlue Airways  ...                13617
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                11209
+1  American Eagle Airlines Inc.  ...                57472
+2         United Air Lines Inc.  ...                35949
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   132
+1           PSA Airlines  ...                   198
+2  Skywest Airlines Inc.  ...                  1962
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   122
+1  American Eagle Airlines Inc.  ...                   832
+2          Alaska Airlines Inc.  ...                   260
+
+[3 rows x 4 columns]
+2026-04-19 22:35:48,355 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.59s
+2026-04-19 22:38:44,156 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 22:38:46,579 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (20, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 21)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1          JetBlue Airways  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Frontier Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                34492
+1    Allegiant Air  ...                24165
+2  JetBlue Airways  ...                13617
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                11226
+1  American Eagle Airlines Inc.  ...                57472
+2         United Air Lines Inc.  ...                35973
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   132
+1           PSA Airlines  ...                   199
+2  Skywest Airlines Inc.  ...                  1970
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   122
+1  American Eagle Airlines Inc.  ...                   832
+2          Alaska Airlines Inc.  ...                   261
+
+[3 rows x 4 columns]
+2026-04-19 22:38:46,580 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.42s
+2026-04-19 22:40:43,461 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 22:40:45,882 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (104, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 22)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1          JetBlue Airways  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17         JetBlue Airways  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                35342
+1    Allegiant Air  ...                24594
+2  JetBlue Airways  ...                13856
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                12595
+1  American Eagle Airlines Inc.  ...                58758
+2        Hawaiian Airlines Inc.  ...                 8156
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   138
+1           PSA Airlines  ...                   200
+2  Skywest Airlines Inc.  ...                  2139
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   127
+1  American Eagle Airlines Inc.  ...                   866
+2          Alaska Airlines Inc.  ...                   277
+
+[3 rows x 4 columns]
+2026-04-19 22:40:45,883 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.42s
+2026-04-19 23:00:44,356 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:00:48,415 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (176, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 23), datetime.date(2023, 2, 24)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8   American Airlines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10    Alaska Airlines Inc.  ...  1
+11         JetBlue Airways  ...  1
+12    Alaska Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                36220
+1    Allegiant Air  ...                27661
+2  JetBlue Airways  ...                18707
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                16055
+1  American Eagle Airlines Inc.  ...                60012
+2        Hawaiian Airlines Inc.  ...                 8837
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   181
+1           PSA Airlines  ...                   203
+2  Skywest Airlines Inc.  ...                  2321
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   133
+1  American Eagle Airlines Inc.  ...                   883
+2          Alaska Airlines Inc.  ...                   329
+
+[3 rows x 4 columns]
+2026-04-19 23:00:48,415 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=4.06s
+2026-04-19 23:01:30,014 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:01:32,988 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (88, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 25)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10         JetBlue Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12    Alaska Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                36254
+1    Allegiant Air  ...                27961
+2  JetBlue Airways  ...                20349
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                16785
+1  American Eagle Airlines Inc.  ...                60151
+2        Hawaiian Airlines Inc.  ...                 8837
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   199
+1           PSA Airlines  ...                   208
+2  Skywest Airlines Inc.  ...                  2366
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   134
+1  American Eagle Airlines Inc.  ...                   888
+2          Alaska Airlines Inc.  ...                   340
+
+[3 rows x 4 columns]
+2026-04-19 23:01:32,988 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.97s
+2026-04-19 23:05:46,707 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:05:49,142 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (70, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 26)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Southwest Airlines Co.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Southwest Airlines Co.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0     Endeavor Air  ...                36254
+1    Allegiant Air  ...                28014
+2  JetBlue Airways  ...                20711
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                16985
+1  American Eagle Airlines Inc.  ...                60294
+2        Hawaiian Airlines Inc.  ...                 8837
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0        JetBlue Airways  ...                   201
+1           PSA Airlines  ...                   212
+2  Skywest Airlines Inc.  ...                  2401
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   134
+1  American Eagle Airlines Inc.  ...                   893
+2          Alaska Airlines Inc.  ...                   345
+
+[3 rows x 4 columns]
+2026-04-19 23:05:49,142 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.43s
+2026-04-19 23:10:43,053 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:10:47,231 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (93, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 27)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0    Allegiant Air  ...                36151
+1     Endeavor Air  ...                38997
+2  JetBlue Airways  ...                23189
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                17570
+1  American Eagle Airlines Inc.  ...                62322
+2        Hawaiian Airlines Inc.  ...                 8856
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0           PSA Airlines  ...                   219
+1  Skywest Airlines Inc.  ...                  2499
+2        JetBlue Airways  ...                   223
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   135
+1  American Eagle Airlines Inc.  ...                   919
+2          Alaska Airlines Inc.  ...                   359
+
+[3 rows x 4 columns]
+2026-04-19 23:10:47,232 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=4.18s
+2026-04-19 23:15:41,141 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:15:43,810 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (76, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 2, 28)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0    Allegiant Air  ...                37866
+1     Endeavor Air  ...                39421
+2  JetBlue Airways  ...                24518
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                17871
+1  American Eagle Airlines Inc.  ...                62390
+2        Hawaiian Airlines Inc.  ...                 8856
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0           PSA Airlines  ...                   222
+1  Skywest Airlines Inc.  ...                  2548
+2           Endeavor Air  ...                   303
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   135
+1  American Eagle Airlines Inc.  ...                   921
+2          Alaska Airlines Inc.  ...                   366
+
+[3 rows x 4 columns]
+2026-04-19 23:15:43,811 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.67s
+2026-04-19 23:20:43,468 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:20:46,546 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (80, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 1)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0    Allegiant Air  ...                38255
+1     Endeavor Air  ...                39421
+2  JetBlue Airways  ...                24584
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                19211
+1  American Eagle Airlines Inc.  ...                63588
+2        Hawaiian Airlines Inc.  ...                 8949
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0           PSA Airlines  ...                   224
+1  Skywest Airlines Inc.  ...                  2610
+2           Endeavor Air  ...                   303
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   139
+1  American Eagle Airlines Inc.  ...                   942
+2          Alaska Airlines Inc.  ...                   378
+
+[3 rows x 4 columns]
+2026-04-19 23:20:46,546 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=3.08s
+2026-04-19 23:25:41,109 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:25:43,594 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (73, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 2)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3   Frontier Airlines Inc.  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+           airline  ...  total_delay_weather
+0    Allegiant Air  ...                38273
+1     Endeavor Air  ...                39421
+2  JetBlue Airways  ...                24686
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                19476
+1  American Eagle Airlines Inc.  ...                68427
+2        Hawaiian Airlines Inc.  ...                 8949
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  2623
+1           PSA Airlines  ...                   231
+2           Endeavor Air  ...                   303
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   139
+1  American Eagle Airlines Inc.  ...                   972
+2          Alaska Airlines Inc.  ...                   388
+
+[3 rows x 4 columns]
+2026-04-19 23:25:43,594 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.48s
+2026-04-19 23:30:42,682 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-19 23:30:45,372 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (81, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 3)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Southwest Airlines Co.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                41239
+1         Endeavor Air  ...                45192
+2  Delta Air Lines Inc  ...               158850
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                19548
+1  American Eagle Airlines Inc.  ...                70663
+2        Hawaiian Airlines Inc.  ...                 8949
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  2661
+1           Endeavor Air  ...                   321
+2        JetBlue Airways  ...                   255
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   140
+1  American Eagle Airlines Inc.  ...                  1002
+2          Alaska Airlines Inc.  ...                   390
+
+[3 rows x 4 columns]
+2026-04-19 23:30:45,373 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.69s
+2026-04-26 13:08:41,714 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:08:42,134 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:08:46,798 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (79, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 4)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5             PSA Airlines  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0         Endeavor Air  ...                52992
+1        Allegiant Air  ...                41903
+2  Delta Air Lines Inc  ...               187074
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                21644
+1  American Eagle Airlines Inc.  ...                70727
+2        Hawaiian Airlines Inc.  ...                 9077
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  2917
+1           PSA Airlines  ...                   280
+2           Endeavor Air  ...                   361
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   172
+1  American Eagle Airlines Inc.  ...                  1026
+2          Alaska Airlines Inc.  ...                   422
+
+[3 rows x 4 columns]
+2026-04-26 13:08:46,799 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=5.08s
+2026-04-26 13:08:47,231 | INFO | STDOUT
+*****************************Airlines***************************
+Pas de nouvelle date pour agg_delay_by_wcombination_byairline 
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5             PSA Airlines  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8             PSA Airlines  ...  1
+9         Spirit Air Lines  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14  American Airlines Inc.  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Frontier Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0         Endeavor Air  ...                52992
+1        Allegiant Air  ...                41903
+2  Delta Air Lines Inc  ...               187074
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                21644
+1  American Eagle Airlines Inc.  ...                70727
+2        Hawaiian Airlines Inc.  ...                 9077
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  2917
+1           PSA Airlines  ...                   280
+2           Endeavor Air  ...                   361
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   172
+1  American Eagle Airlines Inc.  ...                  1026
+2          Alaska Airlines Inc.  ...                   422
+
+[3 rows x 4 columns]
+2026-04-26 13:08:47,234 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=5.10s
+2026-04-26 13:10:47,554 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:10:50,159 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (53, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 5)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5             PSA Airlines  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17           Allegiant Air  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                67695
+1         Endeavor Air  ...                52992
+2  Delta Air Lines Inc  ...               203698
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                24716
+1  American Eagle Airlines Inc.  ...                70727
+2        Hawaiian Airlines Inc.  ...                 9077
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                  Airline  ... total_delayed_flights
+0   Skywest Airlines Inc.  ...                  3589
+1        Spirit Air Lines  ...                   584
+2  Frontier Airlines Inc.  ...                   333
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   188
+1                 Allegiant Air  ...                   654
+2  American Eagle Airlines Inc.  ...                  1026
+
+[3 rows x 4 columns]
+2026-04-26 13:10:50,159 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.61s
+2026-04-26 13:15:42,439 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:15:44,920 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (42, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 6)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5             PSA Airlines  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13    Alaska Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17           Allegiant Air  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                68087
+1         Endeavor Air  ...                52992
+2  Delta Air Lines Inc  ...               204344
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                24738
+1        Hawaiian Airlines Inc.  ...                 9760
+2  American Eagle Airlines Inc.  ...                70727
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                  Airline  ... total_delayed_flights
+0   Skywest Airlines Inc.  ...                  3628
+1        Spirit Air Lines  ...                   584
+2  Frontier Airlines Inc.  ...                   333
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   219
+1                 Allegiant Air  ...                   664
+2  American Eagle Airlines Inc.  ...                  1029
+
+[3 rows x 4 columns]
+2026-04-26 13:15:44,920 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.48s
+2026-04-26 13:20:42,065 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:20:44,941 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (29, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 7)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5             PSA Airlines  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13  Hawaiian Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Hawaiian Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                68095
+1         Endeavor Air  ...                53050
+2  Delta Air Lines Inc  ...               204344
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0          Alaska Airlines Inc.  ...                24738
+1        Hawaiian Airlines Inc.  ...                 9852
+2  American Eagle Airlines Inc.  ...                70727
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                  Airline  ... total_delayed_flights
+0   Skywest Airlines Inc.  ...                  3642
+1        Spirit Air Lines  ...                   585
+2  Frontier Airlines Inc.  ...                   334
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   246
+1                 Allegiant Air  ...                   666
+2  American Eagle Airlines Inc.  ...                  1029
+
+[3 rows x 4 columns]
+2026-04-26 13:20:44,941 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.88s
+2026-04-26 13:25:42,700 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:25:45,090 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (38, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 8)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Hawaiian Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13  Hawaiian Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Hawaiian Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                68212
+1         Endeavor Air  ...                53050
+2  Delta Air Lines Inc  ...               204379
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0        Hawaiian Airlines Inc.  ...                11669
+1          Alaska Airlines Inc.  ...                24738
+2  American Eagle Airlines Inc.  ...                70792
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                  Airline  ... total_delayed_flights
+0   Skywest Airlines Inc.  ...                  3663
+1        Spirit Air Lines  ...                   588
+2  Frontier Airlines Inc.  ...                   335
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   309
+1                 Allegiant Air  ...                   669
+2  American Eagle Airlines Inc.  ...                  1033
+
+[3 rows x 4 columns]
+2026-04-26 13:25:45,091 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.39s
+2026-04-26 13:30:41,489 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:30:44,349 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (75, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 9)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Hawaiian Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13  Hawaiian Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Hawaiian Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                70199
+1         Endeavor Air  ...                53050
+2  Delta Air Lines Inc  ...               204723
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0        Hawaiian Airlines Inc.  ...                11669
+1          Alaska Airlines Inc.  ...                25074
+2  American Eagle Airlines Inc.  ...                76928
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                  Airline  ... total_delayed_flights
+0   Skywest Airlines Inc.  ...                  3713
+1        Spirit Air Lines  ...                   599
+2  Frontier Airlines Inc.  ...                   336
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   383
+1  American Eagle Airlines Inc.  ...                  1101
+2                 Allegiant Air  ...                   680
+
+[3 rows x 4 columns]
+2026-04-26 13:30:44,350 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.86s
+2026-04-26 13:35:41,267 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:35:44,217 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (101, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 10)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Hawaiian Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13  Hawaiian Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Hawaiian Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                70816
+1         Endeavor Air  ...                53225
+2  Delta Air Lines Inc  ...               206104
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0        Hawaiian Airlines Inc.  ...                11669
+1          Alaska Airlines Inc.  ...                25232
+2  American Eagle Airlines Inc.  ...                77321
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  3781
+1       Spirit Air Lines  ...                   615
+2           Endeavor Air  ...                   369
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   384
+1                 Allegiant Air  ...                   696
+2  American Eagle Airlines Inc.  ...                  1143
+
+[3 rows x 4 columns]
+2026-04-26 13:35:44,218 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=2.95s
+2026-04-26 13:40:42,005 | INFO | START section=airline_analytics module=transformation.main_Airline_analytics
+2026-04-26 13:40:45,079 | INFO | STDOUT
+*****************************Airlines***************************
+mise a jour de agg_delay_by_wcombination_byairline 
+Nombre de lignes : (67, 5)
+mise a jour de agg_wcombination_byairline_processed_dates avec dates :  [datetime.date(2023, 3, 11)]
+la meilleure compagnie dans chaque condition météo:
+                   airline  ... rn
+0             PSA Airlines  ...  1
+1   Hawaiian Airlines Inc.  ...  1
+2   Frontier Airlines Inc.  ...  1
+3             PSA Airlines  ...  1
+4             PSA Airlines  ...  1
+5   Hawaiian Airlines Inc.  ...  1
+6            Allegiant Air  ...  1
+7   Hawaiian Airlines Inc.  ...  1
+8    United Air Lines Inc.  ...  1
+9          JetBlue Airways  ...  1
+10        Republic Airways  ...  1
+11  Frontier Airlines Inc.  ...  1
+12  Frontier Airlines Inc.  ...  1
+13  Hawaiian Airlines Inc.  ...  1
+14        Spirit Air Lines  ...  1
+15  Hawaiian Airlines Inc.  ...  1
+16            PSA Airlines  ...  1
+17  Hawaiian Airlines Inc.  ...  1
+
+[18 rows x 5 columns]
+3 airlines with the highest delay due to the bad weather:
+               airline  ...  total_delay_weather
+0        Allegiant Air  ...                71382
+1         Endeavor Air  ...                53462
+2  Delta Air Lines Inc  ...               206946
+
+[3 rows x 5 columns]
+3 airlines with the lowest delay due to the bad weather:
+                        airline  ...  total_delay_weather
+0        Hawaiian Airlines Inc.  ...                11669
+1          Alaska Airlines Inc.  ...                25297
+2  American Eagle Airlines Inc.  ...                78337
+
+[3 rows x 5 columns]
+3 airlines with the highest recovery rate:
+                 Airline  ... total_delayed_flights
+0  Skywest Airlines Inc.  ...                  3813
+1       Spirit Air Lines  ...                   616
+2           Endeavor Air  ...                   372
+
+[3 rows x 4 columns]
+3 airlines with the lowest recovery rate:
+                        Airline  ... total_delayed_flights
+0        Hawaiian Airlines Inc.  ...                   387
+1                 Allegiant Air  ...                   703
+2  American Eagle Airlines Inc.  ...                  1158
+
+[3 rows x 4 columns]
+2026-04-26 13:40:45,079 | INFO | SUCCESS section=airline_analytics module=transformation.main_Airline_analytics duration=3.07s

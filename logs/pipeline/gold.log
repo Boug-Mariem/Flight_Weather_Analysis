@@ -1,0 +1,429 @@
+2026-04-19 22:27:35,384 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:27:37,293 | INFO | STDOUT
+DEBUG result shape: (429, 2)
+                                  0                                 1
+0    medium-wind_high-rain_low-snow  medium-wind_medium-rain_low-snow
+1    medium-wind_high-rain_low-snow     low-wind_medium-rain_low-snow
+2  medium-wind_medium-rain_low-snow     low-wind_medium-rain_low-snow
+3      high-wind_high-rain_low-snow     low-wind_medium-rain_low-snow
+4     low-wind_medium-rain_low-snow    medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-16 00:00:00')]
+Nombre de lignes : (429, 56)
+2026-04-19 22:27:37,293 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.91s
+2026-04-19 22:32:06,148 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:32:07,941 | INFO | STDOUT
+DEBUG result shape: (207, 2)
+                                 0                               1
+0   medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+1     high-wind_high-rain_low-snow    high-wind_high-rain_low-snow
+2  medium-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+3     high-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+4   medium-wind_high-rain_low-snow    high-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-17 00:00:00'), Timestamp('2023-02-18 00:00:00')]
+Nombre de lignes : (207, 56)
+2026-04-19 22:32:07,941 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.79s
+2026-04-19 22:32:31,372 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:32:33,334 | ERROR | STDERR
+Traceback (most recent call last):
+  File "D:\logiciels\python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\logiciels\python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\main_gold.py", line 4, in <module>
+    gold_table()
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 228, in gold_table
+    df= jointure(df_flights, df_weather)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 13, in jointure
+    valid_airports = set(df_weather['airport_id'])
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'airport_id'
+2026-04-19 22:32:33,334 | ERROR | FAILED section=gold module=transformation.main_gold returncode=1 duration=1.96s
+2026-04-19 22:35:39,559 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:35:41,336 | INFO | STDOUT
+DEBUG result shape: (87, 2)
+                               0                              1
+0  high-wind_high-rain_high-snow  high-wind_high-rain_high-snow
+1  high-wind_high-rain_high-snow  high-wind_high-rain_high-snow
+2  high-wind_high-rain_high-snow  high-wind_high-rain_high-snow
+3  high-wind_high-rain_high-snow  high-wind_high-rain_high-snow
+4  high-wind_high-rain_high-snow  high-wind_high-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-02-19 00:00:00'), Timestamp('2023-02-20 00:00:00')]
+Nombre de lignes : (87, 56)
+2026-04-19 22:35:41,336 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.78s
+2026-04-19 22:35:58,752 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:36:00,472 | ERROR | STDERR
+Traceback (most recent call last):
+  File "D:\logiciels\python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\logiciels\python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\main_gold.py", line 4, in <module>
+    gold_table()
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 228, in gold_table
+    df= jointure(df_flights, df_weather)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 13, in jointure
+    valid_airports = set(df_weather['airport_id'])
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'airport_id'
+2026-04-19 22:36:00,472 | ERROR | FAILED section=gold module=transformation.main_gold returncode=1 duration=1.72s
+2026-04-19 22:38:38,475 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:38:40,318 | INFO | STDOUT
+DEBUG result shape: (24, 2)
+                                 0                               1
+0      low-wind_high-rain_low-snow     high-wind_low-rain_low-snow
+1      low-wind_low-rain_high-snow  high-wind_medium-rain_low-snow
+2     low-wind_high-rain_high-snow     low-wind_high-rain_low-snow
+3   medium-wind_high-rain_low-snow     low-wind_high-rain_low-snow
+4  medium-wind_high-rain_high-snow     low-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-21 00:00:00')]
+Nombre de lignes : (24, 56)
+2026-04-19 22:38:40,318 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.84s
+2026-04-19 22:40:37,496 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 22:40:40,009 | INFO | STDOUT
+DEBUG result shape: (498, 2)
+                                0                               1
+0    high-wind_high-rain_low-snow   low-wind_medium-rain_low-snow
+1  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+2     high-wind_low-rain_low-snow    high-wind_high-rain_low-snow
+3    high-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+4    high-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-22 00:00:00')]
+Nombre de lignes : (498, 56)
+2026-04-19 22:40:40,009 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.51s
+2026-04-19 23:00:33,922 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:00:36,776 | INFO | STDOUT
+DEBUG result shape: (668, 2)
+                                  0                                 1
+0       high-wind_low-rain_low-snow  medium-wind_medium-rain_low-snow
+1     medium-wind_low-rain_low-snow     high-wind_high-rain_high-snow
+2  medium-wind_medium-rain_low-snow   medium-wind_high-rain_high-snow
+3   medium-wind_high-rain_high-snow  medium-wind_medium-rain_low-snow
+4   medium-wind_high-rain_high-snow  medium-wind_medium-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-23 00:00:00'), Timestamp('2023-02-24 00:00:00')]
+Nombre de lignes : (668, 56)
+2026-04-19 23:00:36,777 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.85s
+2026-04-19 23:00:38,826 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:00:41,932 | ERROR | STDERR
+Traceback (most recent call last):
+  File "D:\logiciels\python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\logiciels\python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\main_gold.py", line 4, in <module>
+    gold_table()
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 228, in gold_table
+    df= jointure(df_flights, df_weather)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\transformation\gold_table.py", line 13, in jointure
+    valid_airports = set(df_weather['airport_id'])
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\Programmation_ING2\S2\Data_engineering\Projet\Flight_Weather_Analysis\flightsWeather39\lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'airport_id'
+2026-04-19 23:00:41,933 | ERROR | FAILED section=gold module=transformation.main_gold returncode=1 duration=3.11s
+2026-04-19 23:01:24,617 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:01:26,413 | INFO | STDOUT
+DEBUG result shape: (181, 2)
+                               0                              1
+0  low-wind_medium-rain_low-snow  low-wind_medium-rain_low-snow
+1  low-wind_medium-rain_low-snow  low-wind_medium-rain_low-snow
+2    low-wind_low-rain_high-snow  medium-wind_low-rain_low-snow
+3  low-wind_medium-rain_low-snow  low-wind_medium-rain_low-snow
+4  low-wind_medium-rain_low-snow     low-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-25 00:00:00')]
+Nombre de lignes : (181, 56)
+2026-04-19 23:01:26,413 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.80s
+2026-04-19 23:05:41,577 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:05:43,485 | INFO | STDOUT
+DEBUG result shape: (101, 2)
+                                  0                               1
+0        low-wind_low-rain_low-snow   medium-wind_low-rain_low-snow
+1  medium-wind_medium-rain_low-snow  high-wind_medium-rain_low-snow
+2    high-wind_medium-rain_low-snow  medium-wind_high-rain_low-snow
+3       high-wind_low-rain_low-snow  high-wind_medium-rain_low-snow
+4    high-wind_medium-rain_low-snow     high-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-26 00:00:00')]
+Nombre de lignes : (101, 56)
+2026-04-19 23:05:43,486 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.91s
+2026-04-19 23:10:37,357 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:10:39,104 | INFO | STDOUT
+DEBUG result shape: (313, 2)
+                                0                               1
+0  medium-wind_high-rain_low-snow   high-wind_high-rain_high-snow
+1  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+2  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+3  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+4  medium-wind_high-rain_low-snow  high-wind_medium-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-02-27 00:00:00')]
+Nombre de lignes : (313, 56)
+2026-04-19 23:10:39,105 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.75s
+2026-04-19 23:15:36,320 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:15:38,044 | INFO | STDOUT
+DEBUG result shape: (158, 2)
+                                 0                                1
+0    medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+1      low-wind_high-rain_low-snow  medium-wind_high-rain_high-snow
+2  medium-wind_high-rain_high-snow  medium-wind_high-rain_high-snow
+3    medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+4  medium-wind_high-rain_high-snow  medium-wind_high-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-02-28 00:00:00')]
+Nombre de lignes : (158, 56)
+2026-04-19 23:15:38,044 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.72s
+2026-04-19 23:20:37,506 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:20:39,613 | INFO | STDOUT
+DEBUG result shape: (186, 2)
+                                  0                                 1
+0     medium-wind_low-rain_low-snow  medium-wind_medium-rain_low-snow
+1     low-wind_medium-rain_low-snow        low-wind_low-rain_low-snow
+2      high-wind_high-rain_low-snow     medium-wind_low-rain_low-snow
+3      high-wind_high-rain_low-snow      high-wind_high-rain_low-snow
+4  medium-wind_medium-rain_low-snow  medium-wind_medium-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-01 00:00:00')]
+Nombre de lignes : (186, 56)
+2026-04-19 23:20:39,613 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.11s
+2026-04-19 23:25:35,842 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:25:37,610 | INFO | STDOUT
+DEBUG result shape: (204, 2)
+                                0                                 1
+0  medium-wind_high-rain_low-snow     medium-wind_low-rain_low-snow
+1  medium-wind_high-rain_low-snow  medium-wind_medium-rain_low-snow
+2  medium-wind_high-rain_low-snow    medium-wind_high-rain_low-snow
+3  medium-wind_high-rain_low-snow       low-wind_high-rain_low-snow
+4  medium-wind_high-rain_low-snow    medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-02 00:00:00')]
+Nombre de lignes : (204, 56)
+2026-04-19 23:25:37,610 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.77s
+2026-04-19 23:30:36,661 | INFO | START section=gold module=transformation.main_gold
+2026-04-19 23:30:38,418 | INFO | STDOUT
+DEBUG result shape: (353, 2)
+                              0                                 1
+0  high-wind_high-rain_low-snow    medium-wind_high-rain_low-snow
+1  high-wind_high-rain_low-snow  medium-wind_medium-rain_low-snow
+2  high-wind_high-rain_low-snow    high-wind_medium-rain_low-snow
+3  high-wind_high-rain_low-snow      high-wind_high-rain_low-snow
+4  high-wind_high-rain_low-snow      high-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-03 00:00:00')]
+Nombre de lignes : (353, 56)
+2026-04-19 23:30:38,418 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.76s
+2026-04-26 13:08:29,421 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:08:29,421 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:08:29,421 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:08:29,421 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:08:31,732 | INFO | STDOUT
+DEBUG result shape: (608, 2)
+                                  0                                  1
+0  medium-wind_medium-rain_low-snow      medium-wind_low-rain_low-snow
+1        low-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+2       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+3    medium-wind_high-rain_low-snow  medium-wind_medium-rain_high-snow
+4       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (608, 56)
+2026-04-26 13:08:31,732 | INFO | STDOUT
+DEBUG result shape: (608, 2)
+                                  0                                  1
+0  medium-wind_medium-rain_low-snow      medium-wind_low-rain_low-snow
+1        low-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+2       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+3    medium-wind_high-rain_low-snow  medium-wind_medium-rain_high-snow
+4       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (608, 56)
+2026-04-26 13:08:31,733 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.31s
+2026-04-26 13:08:31,733 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.31s
+2026-04-26 13:08:31,786 | INFO | STDOUT
+DEBUG result shape: (608, 2)
+                                  0                                  1
+0  medium-wind_medium-rain_low-snow      medium-wind_low-rain_low-snow
+1        low-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+2       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+3    medium-wind_high-rain_low-snow  medium-wind_medium-rain_high-snow
+4       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (608, 56)
+2026-04-26 13:08:31,786 | INFO | STDOUT
+DEBUG result shape: (608, 2)
+                                  0                                  1
+0  medium-wind_medium-rain_low-snow      medium-wind_low-rain_low-snow
+1        low-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+2       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+3    medium-wind_high-rain_low-snow  medium-wind_medium-rain_high-snow
+4       low-wind_high-rain_low-snow      medium-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (608, 56)
+2026-04-26 13:08:31,787 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.36s
+2026-04-26 13:08:31,787 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.36s
+2026-04-26 13:10:39,084 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:10:39,084 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:10:41,777 | INFO | STDOUT
+DEBUG result shape: (1552, 2)
+                               0                                1
+0  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+1  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+2  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+3  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+4  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-05 00:00:00')]
+Nombre de lignes : (1552, 56)
+2026-04-26 13:10:41,777 | INFO | STDOUT
+DEBUG result shape: (1552, 2)
+                               0                                1
+0  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+1  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+2  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+3  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+4  medium-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-05 00:00:00')]
+Nombre de lignes : (1552, 56)
+2026-04-26 13:10:41,777 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.69s
+2026-04-26 13:10:41,777 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.69s
+2026-04-26 13:15:36,938 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:15:36,938 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:15:39,129 | INFO | STDOUT
+DEBUG result shape: (109, 2)
+                                   0                                1
+0     medium-wind_low-rain_high-snow    medium-wind_low-rain_low-snow
+1    medium-wind_high-rain_high-snow       low-wind_low-rain_low-snow
+2         low-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+3  medium-wind_medium-rain_high-snow      high-wind_low-rain_low-snow
+4    medium-wind_high-rain_high-snow       low-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-06 00:00:00')]
+Nombre de lignes : (109, 56)
+2026-04-26 13:15:39,129 | INFO | STDOUT
+DEBUG result shape: (109, 2)
+                                   0                                1
+0     medium-wind_low-rain_high-snow    medium-wind_low-rain_low-snow
+1    medium-wind_high-rain_high-snow       low-wind_low-rain_low-snow
+2         low-wind_low-rain_low-snow  medium-wind_high-rain_high-snow
+3  medium-wind_medium-rain_high-snow      high-wind_low-rain_low-snow
+4    medium-wind_high-rain_high-snow       low-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-06 00:00:00')]
+Nombre de lignes : (109, 56)
+2026-04-26 13:15:39,129 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.19s
+2026-04-26 13:15:39,129 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.19s
+2026-04-26 13:20:35,431 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:20:35,431 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:20:37,540 | INFO | STDOUT
+DEBUG result shape: (64, 2)
+                                0                                  1
+0   medium-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+1  medium-wind_low-rain_high-snow   medium-wind_medium-rain_low-snow
+2  high-wind_medium-rain_low-snow  medium-wind_medium-rain_high-snow
+3  medium-wind_low-rain_high-snow      low-wind_medium-rain_low-snow
+4   medium-wind_low-rain_low-snow     medium-wind_low-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-07 00:00:00')]
+Nombre de lignes : (64, 56)
+2026-04-26 13:20:37,540 | INFO | STDOUT
+DEBUG result shape: (64, 2)
+                                0                                  1
+0   medium-wind_low-rain_low-snow      medium-wind_low-rain_low-snow
+1  medium-wind_low-rain_high-snow   medium-wind_medium-rain_low-snow
+2  high-wind_medium-rain_low-snow  medium-wind_medium-rain_high-snow
+3  medium-wind_low-rain_high-snow      low-wind_medium-rain_low-snow
+4   medium-wind_low-rain_low-snow     medium-wind_low-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-07 00:00:00')]
+Nombre de lignes : (64, 56)
+2026-04-26 13:20:37,541 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.11s
+2026-04-26 13:20:37,541 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.11s
+2026-04-26 13:25:37,209 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:25:37,209 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:25:38,969 | INFO | STDOUT
+DEBUG result shape: (107, 2)
+                                  0                                  1
+0     medium-wind_low-rain_low-snow   medium-wind_medium-rain_low-snow
+1  medium-wind_medium-rain_low-snow   medium-wind_medium-rain_low-snow
+2  medium-wind_medium-rain_low-snow   medium-wind_medium-rain_low-snow
+3  medium-wind_medium-rain_low-snow      low-wind_medium-rain_low-snow
+4     high-wind_high-rain_high-snow  medium-wind_medium-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-08 00:00:00')]
+Nombre de lignes : (107, 56)
+2026-04-26 13:25:38,969 | INFO | STDOUT
+DEBUG result shape: (107, 2)
+                                  0                                  1
+0     medium-wind_low-rain_low-snow   medium-wind_medium-rain_low-snow
+1  medium-wind_medium-rain_low-snow   medium-wind_medium-rain_low-snow
+2  medium-wind_medium-rain_low-snow   medium-wind_medium-rain_low-snow
+3  medium-wind_medium-rain_low-snow      low-wind_medium-rain_low-snow
+4     high-wind_high-rain_high-snow  medium-wind_medium-rain_high-snow
+join flights et weather avec date =  [Timestamp('2023-03-08 00:00:00')]
+Nombre de lignes : (107, 56)
+2026-04-26 13:25:38,969 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.76s
+2026-04-26 13:25:38,969 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.76s
+2026-04-26 13:30:35,918 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:30:35,918 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:30:37,960 | INFO | STDOUT
+DEBUG result shape: (433, 2)
+                                0                               1
+0  medium-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+1  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+2    high-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+3   medium-wind_low-rain_low-snow      low-wind_low-rain_low-snow
+4     low-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-09 00:00:00')]
+Nombre de lignes : (433, 56)
+2026-04-26 13:30:37,960 | INFO | STDOUT
+DEBUG result shape: (433, 2)
+                                0                               1
+0  medium-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+1  medium-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+2    high-wind_high-rain_low-snow   medium-wind_low-rain_low-snow
+3   medium-wind_low-rain_low-snow      low-wind_low-rain_low-snow
+4     low-wind_high-rain_low-snow  medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-09 00:00:00')]
+Nombre de lignes : (433, 56)
+2026-04-26 13:30:37,960 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.04s
+2026-04-26 13:30:37,960 | INFO | SUCCESS section=gold module=transformation.main_gold duration=2.04s
+2026-04-26 13:35:35,868 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:35:35,868 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:35:37,605 | INFO | STDOUT
+DEBUG result shape: (259, 2)
+                                 0                               1
+0  medium-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+1  medium-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+2    high-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+3    low-wind_medium-rain_low-snow  medium-wind_high-rain_low-snow
+4    medium-wind_low-rain_low-snow  medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-10 00:00:00')]
+Nombre de lignes : (259, 56)
+2026-04-26 13:35:37,605 | INFO | STDOUT
+DEBUG result shape: (259, 2)
+                                 0                               1
+0  medium-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+1  medium-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+2    high-wind_high-rain_high-snow  medium-wind_high-rain_low-snow
+3    low-wind_medium-rain_low-snow  medium-wind_high-rain_low-snow
+4    medium-wind_low-rain_low-snow  medium-wind_high-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-10 00:00:00')]
+Nombre de lignes : (259, 56)
+2026-04-26 13:35:37,605 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.74s
+2026-04-26 13:35:37,605 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.74s
+2026-04-26 13:40:36,720 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:40:36,720 | INFO | START section=gold module=transformation.main_gold
+2026-04-26 13:40:38,328 | INFO | STDOUT
+DEBUG result shape: (110, 2)
+                                0                               1
+0     low-wind_high-rain_low-snow   low-wind_medium-rain_low-snow
+1     high-wind_low-rain_low-snow      low-wind_low-rain_low-snow
+2   medium-wind_low-rain_low-snow  medium-wind_high-rain_low-snow
+3     low-wind_high-rain_low-snow     high-wind_low-rain_low-snow
+4  medium-wind_high-rain_low-snow     high-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-11 00:00:00')]
+Nombre de lignes : (110, 56)
+2026-04-26 13:40:38,328 | INFO | STDOUT
+DEBUG result shape: (110, 2)
+                                0                               1
+0     low-wind_high-rain_low-snow   low-wind_medium-rain_low-snow
+1     high-wind_low-rain_low-snow      low-wind_low-rain_low-snow
+2   medium-wind_low-rain_low-snow  medium-wind_high-rain_low-snow
+3     low-wind_high-rain_low-snow     high-wind_low-rain_low-snow
+4  medium-wind_high-rain_low-snow     high-wind_low-rain_low-snow
+join flights et weather avec date =  [Timestamp('2023-03-11 00:00:00')]
+Nombre de lignes : (110, 56)
+2026-04-26 13:40:38,328 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.61s
+2026-04-26 13:40:38,328 | INFO | SUCCESS section=gold module=transformation.main_gold duration=1.61s

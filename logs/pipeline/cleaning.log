@@ -1,0 +1,172 @@
+2026-04-19 22:27:30,135 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:27:32,149 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-16 00:00:00')]
+Nombre de lignes : (429, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-17 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 22:27:32,149 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.01s
+2026-04-19 22:32:00,414 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:32:02,740 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-17 00:00:00')]
+Nombre de lignes : (153, 13)
+Clean de batch flights avec date =  [Timestamp('2023-02-18 00:00:00')]
+Nombre de lignes : (54, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-18 00:00:00')]
+Nombre de lignes : (364, 10)
+Clean de batch weather avec date =  [Timestamp('2023-02-19 00:00:00')]
+Nombre de lignes : (33, 10)
+2026-04-19 22:32:02,740 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.33s
+2026-04-19 22:32:27,011 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:32:28,580 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.57s
+2026-04-19 22:35:33,070 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:35:35,724 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-19 00:00:00')]
+Nombre de lignes : (26, 13)
+Clean de batch flights avec date =  [Timestamp('2023-02-20 00:00:00')]
+Nombre de lignes : (61, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-20 00:00:00')]
+Nombre de lignes : (364, 10)
+Clean de batch weather avec date =  [Timestamp('2023-02-21 00:00:00')]
+Nombre de lignes : (151, 10)
+2026-04-19 22:35:35,724 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.65s
+2026-04-19 22:35:53,054 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:35:54,974 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.92s
+2026-04-19 22:38:33,348 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:38:35,228 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-21 00:00:00')]
+Nombre de lignes : (136, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-22 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 22:38:35,228 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.88s
+2026-04-19 22:40:31,974 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 22:40:34,213 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-22 00:00:00')]
+Nombre de lignes : (498, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-23 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 22:40:34,213 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.24s
+2026-04-19 23:00:27,571 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:00:30,040 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-23 00:00:00')]
+Nombre de lignes : (407, 13)
+Clean de batch flights avec date =  [Timestamp('2023-02-24 00:00:00')]
+Nombre de lignes : (261, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-24 00:00:00')]
+Nombre de lignes : (364, 10)
+Clean de batch weather avec date =  [Timestamp('2023-02-25 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:00:30,040 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.47s
+2026-04-19 23:00:32,460 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:00:34,803 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.34s
+2026-04-19 23:01:19,086 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:01:21,372 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-25 00:00:00')]
+Nombre de lignes : (181, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-26 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:01:21,372 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.29s
+2026-04-19 23:05:31,833 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:05:37,380 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-26 00:00:00')]
+Nombre de lignes : (101, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-27 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:05:37,380 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=5.55s
+2026-04-19 23:10:32,288 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:10:34,396 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-27 00:00:00')]
+Nombre de lignes : (313, 13)
+Clean de batch weather avec date =  [Timestamp('2023-02-28 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:10:34,396 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.11s
+2026-04-19 23:15:31,394 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:15:33,243 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-02-28 00:00:00')]
+Nombre de lignes : (158, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-01 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:15:33,243 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.85s
+2026-04-19 23:20:32,440 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:20:34,438 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-01 00:00:00')]
+Nombre de lignes : (186, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-02 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:20:34,438 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.00s
+2026-04-19 23:25:31,393 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:25:33,161 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-02 00:00:00')]
+Nombre de lignes : (204, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-03 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:25:33,161 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.77s
+2026-04-19 23:30:31,121 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-19 23:30:33,316 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-03 00:00:00')]
+Nombre de lignes : (353, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-19 23:30:33,317 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.19s
+2026-04-26 13:08:24,051 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:08:24,056 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:08:26,534 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (304, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-05 00:00:00')]
+Nombre de lignes : (728, 10)
+2026-04-26 13:08:26,534 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.48s
+2026-04-26 13:08:26,541 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-04 00:00:00')]
+Nombre de lignes : (304, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-05 00:00:00')]
+Nombre de lignes : (728, 10)
+2026-04-26 13:08:26,541 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.49s
+2026-04-26 13:10:32,565 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:10:34,676 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-05 00:00:00')]
+Nombre de lignes : (97, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-06 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:10:34,676 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.11s
+2026-04-26 13:15:32,573 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:15:34,556 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-06 00:00:00')]
+Nombre de lignes : (109, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-07 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:15:34,556 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.98s
+2026-04-26 13:20:30,885 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:20:32,779 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-07 00:00:00')]
+Nombre de lignes : (64, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-08 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:20:32,780 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.89s
+2026-04-26 13:25:32,360 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:25:34,258 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-08 00:00:00')]
+Nombre de lignes : (107, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-09 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:25:34,259 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.90s
+2026-04-26 13:30:30,632 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:30:32,747 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-09 00:00:00')]
+Nombre de lignes : (433, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-10 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:30:32,748 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=2.11s
+2026-04-26 13:35:31,119 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:35:33,067 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-10 00:00:00')]
+Nombre de lignes : (259, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-11 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:35:33,067 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.95s
+2026-04-26 13:40:31,693 | INFO | START section=cleaning module=transformation.main_clean
+2026-04-26 13:40:33,620 | INFO | STDOUT
+Clean de batch flights avec date =  [Timestamp('2023-03-11 00:00:00')]
+Nombre de lignes : (110, 13)
+Clean de batch weather avec date =  [Timestamp('2023-03-12 00:00:00')]
+Nombre de lignes : (364, 10)
+2026-04-26 13:40:33,621 | INFO | SUCCESS section=cleaning module=transformation.main_clean duration=1.93s

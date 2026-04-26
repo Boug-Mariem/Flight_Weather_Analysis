@@ -834,7 +834,7 @@ with airline_tab:
 # ── Airline — Airport ─────────────────────────────────────────────────────────
 with airline_airport_tab:
     show_table(
-        "Top 3 Best Airlines per Airport during Bad Weather",
+        "Top 1 Best Airlines per Airport during Bad Weather",
         "airline_airport_best",
         columns=["airport", "airline", "avg_delay"],
         rename={"airport": "Airport", "airline": "Airline", "avg_delay": "Avg Delay (min)"},
@@ -843,7 +843,7 @@ with airline_airport_tab:
     )
     _divider()
     show_table(
-        "Top 3 Worst Airlines per Airport during Bad Weather",
+        "Top 1 Worst Airlines per Airport during Bad Weather",
         "airline_airport_worst",
         columns=["airport", "airline", "avg_delay"],
         rename={"airport": "Airport", "airline": "Airline", "avg_delay": "Avg Delay (min)"},

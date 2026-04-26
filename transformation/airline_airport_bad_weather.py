@@ -144,7 +144,7 @@ def compute_final_metrics(engine, top=False):
                 SUM(flight_count) AS total_flights
             FROM agg_airline_airport_bad_weather
             GROUP BY airport, airline
-            HAVING SUM(flight_count) >= 5
+            HAVING SUM(flight_count) >= 1
         ),
         ranked AS (
             SELECT *,
@@ -156,7 +156,7 @@ def compute_final_metrics(engine, top=False):
         )
         SELECT *
         FROM ranked
-        WHERE rn <= 3
+        WHERE rn = 1
         ORDER BY airport, avg_delay {order};
     """)
 
