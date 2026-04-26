@@ -69,32 +69,43 @@ _Weather Data_ :
 Meteorological dataset 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=weather_meteo_by_airport.csv)
 
 ## Tech Stack
-**Core Technologies**
-Python → main processing language
-Pandas / NumPy → data transformation
-PostgreSQL → data warehouse storage
-Chosen for:
+**Core Technologies**  
+
+Python → main processing language  
+
+Pandas / NumPy → data transformation  
+
+PostgreSQL → data warehouse storage  
+
+Chosen for:  
 - relational modeling (joins between flights & weather)
 - strong SQL analytical performance
 - simplicity and integration with Python
+
 **Streaming**
-Apache Kafka
+Apache Kafka  
+
 Used for:
 - simulating real-time weather ingestion
 - decoupling producer and consumer
 - building scalable streaming architecture
-**Orchestration**
-Apache Airflow
+
+**Orchestration**  
+Apache Airflow  
+
 Used for:
 - DAG-based pipeline orchestration
 - scheduling batch processing
 - monitoring and retry mechanisms
-**Visualization**
+
+**Visualization**  
 Streamlit
+
 Used for:
 - interactive dashboards
 - fast Python-based UI
 - real-time exploration of results
+
 **Architecture Style**
 - Medallion Architecture (Bronze / Silver / Gold)
 - Hybrid Batch + Streaming system
