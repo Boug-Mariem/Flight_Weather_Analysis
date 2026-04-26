@@ -18,15 +18,15 @@ Additionally, the system provides:
 - predictive estimation of flight delays
 
 ## Architecture
-                +----------------------+
+                              +----------------------+
                 |   Kaggle Datasets    |
                 | (Flights + Weather)  |
                 +----------+-----------+
                            |
         +------------------+------------------+
         |                                     |
-Batch Ingestion                      Kafka Streaming
-(Flights Data)                     (Weather Data)
+  Batch Ingestion                      Kafka Streaming
+  (Flights Data)                     (Weather Data)
         |                                     |
         +------------------+------------------+
                            |
@@ -58,7 +58,6 @@ Batch Ingestion                      Kafka Streaming
                  | Streamlit Dashboard|
                  | Data Visualization |
                  +-------------------+
-
 ## Data Sources
 _Flight Data_ :
 US Civil Flights 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=US_flights_2023.csv)  
