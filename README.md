@@ -18,36 +18,46 @@ Additionally, the system provides:
 - predictive estimation of flight delays
 
 ## Architecture
-            +----------------------+
-            |  Kaggle Datasets     |
-            | (Flights + Weather)  |
-            +----------+-----------+
-                       |
-         +-------------+-------------+
-         |                           |
-   Batch Ingestion            Kafka Streaming
-   (Flights Data)             (Weather Data)
-         |                           |
-         +-------------+-------------+
-                       |
-                 Bronze Layer
-           (Raw Data Storage - PostgreSQL)
-                       |
-                 Silver Layer
-        (Cleaning & Data Standardization)
-                       |
-                 Gold Layer
-        (Feature Engineering & Joins)
-                       |
-        +--------------+--------------+
-        |                             |
-  Aggregation Tables           Prediction Module
- (Weather, Airports,           (Delay Estimation)
+                            +----------------------+
+                |   Kaggle Datasets    |
+                | (Flights + Weather)  |
+                +----------+-----------+
+                           |
+        +------------------+------------------+
+        |                                     |
+  Batch Ingestion                    Kafka Streaming
+  (Flights Data)                    (Weather Data)
+        |                                     |
+        +------------------+------------------+
+                           |
+                 +---------v---------+
+                 |   Bronze Layer     |
+                 | Raw Data Storage   |
+                 | (PostgreSQL)      |
+                 +---------+---------+
+                           |
+                 +---------v---------+
+                 |   Silver Layer     |
+                 | Cleaning &        |
+                 | Standardization   |
+                 +---------+---------+
+                           |
+                 +---------v---------+
+                 |    Gold Layer      |
+                 | Feature Engineering|
+                 | & Joins           |
+                 +---------+---------+
+                           |
+        +------------------+------------------+
+        |                                     |
+ Aggregation Tables                Prediction Module
+ (Weather, Airports,             (Delay Estimation)
   Airlines Analysis)
-                       |
-                 Streamlit Dashboard
-                       |
-                 Data Visualization
+                           |
+                 +---------v---------+
+                 | Streamlit Dashboard|
+                 | Data Visualization |
+                 +-------------------+
 
 ## Data Sources
 _Flight Data_ :
