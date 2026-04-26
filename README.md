@@ -110,3 +110,42 @@ Used for:
 - Medallion Architecture (Bronze / Silver / Gold)
 - Hybrid Batch + Streaming system
 - Incremental data processing
+
+## Installation & Setup Instructions
+
+### 1. Clone the repository
+- git clone https://github.com/your-username/flight-delay-pipeline.git
+- cd flight-delay-pipeline
+### 2. Create Python environment
+- python -m venv venv  
+Activate it:
+Windows: venv\Scripts\activate
+Linux / Mac: source venv/bin/activate
+### 3. Install dependencies
+- pip install -r requirements.txt
+### 4. Start PostgreSQL
+Ensure PostgreSQL service is running on your machine
+Create the database once:
+- CREATE DATABASE flights_db;
+All required tables (Bronze / Silver / Gold / Aggregations) will be automatically created by the pipeline at runtime.
+### 5. Start Kafka (Local setup)
+Start Zookeeper:
+- .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+Start Kafka broker:
+- .\bin\windows\kafka-server-start.bat .\config\server.properties
+### 6. Run Pipeline Components
+Start orchestration server:
+- python -m orchestrator.server
+Start Kafka weather consumer (Streaming → PostgreSQL):
+- python -m ingestion.consumer_weather
+### 7. Launch Streamlit Dashboard
+- streamlit run streamlit/app.py
+### 8. Start Airflow
+Initialize Airflow database:
+- airflow db init
+Start scheduler:
+- airflow scheduler
+Start webserver:
+- airflow webserver
+Access Airflow UI:
+- http://localhost:8080
