@@ -51,7 +51,8 @@ Additionally, the system provides:
 
 ## Data Sources
 _Flight Data_ :
-US Civil Flights 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=US_flights_2023.csv)
+US Civil Flights 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=US_flights_2023.csv)  
+
 _Weather Data_ :
 Meteorological dataset 2023 (Kaggle) (https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft/data?select=weather_meteo_by_airport.csv)
 
