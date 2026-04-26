@@ -18,15 +18,15 @@ Additionally, the system provides:
 - predictive estimation of flight delays
 
 ## Architecture
-                            +----------------------+
+                +----------------------+
                 |   Kaggle Datasets    |
                 | (Flights + Weather)  |
                 +----------+-----------+
                            |
         +------------------+------------------+
         |                                     |
-  Batch Ingestion                    Kafka Streaming
-  (Flights Data)                    (Weather Data)
+Batch Ingestion                      Kafka Streaming
+(Flights Data)                     (Weather Data)
         |                                     |
         +------------------+------------------+
                            |
@@ -51,8 +51,8 @@ Additionally, the system provides:
         +------------------+------------------+
         |                                     |
  Aggregation Tables                Prediction Module
- (Weather, Airports,             (Delay Estimation)
-  Airlines Analysis)
+ (Weather / Airport /            (Delay Estimation)
+  Airline Analysis)
                            |
                  +---------v---------+
                  | Streamlit Dashboard|
