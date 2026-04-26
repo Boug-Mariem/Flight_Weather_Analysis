@@ -114,8 +114,8 @@ Used for:
 ## Installation & Setup Instructions
 
 ### 1. Clone the repository
-- git clone https://github.com/your-username/flight-delay-pipeline.git
-- cd flight-delay-pipeline
+- git clone https: https://github.com/Boug-Mariem/Flight_Weather_Analysis.git
+- cd Flight_Weather_Analysis
 ### 2. Create Python environment
 - python -m venv venv  
 Activate it:
